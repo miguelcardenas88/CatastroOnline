@@ -1,0 +1,12 @@
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\Comun.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\System.Web.Mvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\System.Web.Mvc.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\bin\Release\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.csproj.CopyComplete
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.pdb

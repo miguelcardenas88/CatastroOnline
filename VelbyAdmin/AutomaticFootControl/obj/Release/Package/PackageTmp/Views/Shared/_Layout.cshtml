@@ -1,0 +1,608 @@
+﻿@using AutomaticFootControl.Models
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+
+    <title>Administrador</title>
+
+    <!-- Fonts -->
+    @Styles.Render("~/bundles/css")
+    @*<link href="//Content/assets/css/Icono/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" id="idLayout">
+        <div class="">
+            <div class="row">
+                <nav id="sidebar" class="px-0 bg-dark bg-gradient sidebar">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="logo-nav-item">
+                            <a style="text-align:center;" class="navbar-brand" href="#">
+                                <label style="font-size:17px; text-align:center;">Sistema de Emisiones</label>     <br />
+                                <label style="font-size:17px; text-align:center;">Catastro Agua Potable</label>
+                            </a>
+                        </li>
+                        <li>
+                            <h6 class="nav-header">Agua Potable</h6>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("Nuevo", "SubProducto")', 'SubProducto');">
+                                <i class="fa fa-list-alt"></i>
+                                Nuevo Registro <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        @*<li class="nav-item">
+                                <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarSubProducto", "SubProducto")', '');">
+                                    <i class="fa fa-list-alt fa-1x"></i>
+                                    Sub Producto
+                                </a>
+                            </li>*@
+
+                        @*<li>
+                                <h6 class="nav-header">Colaboradores</h6>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarColaborador", "Colaborador")', '');">
+                                    <i class="fa fa-list-alt"></i>
+                                    Gestión Colaborador <span class="sr-only">(current)</span>
+                                </a>
+                            </li>*@
+
+                    </ul>
+
+                    @*<ul class="nav nav-pills flex-column">
+                            <li>
+                                <h6 class="nav-header">Apps</h6>
+                                <input type="button" id="btnListarEmpresas" value="Listar Empresas" />
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-store"></i>
+                                    eCommerce
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ecommerce-dashboard.html">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ecommerce-product-page.html">Product Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ecommerce-category-page.html">Category Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ecommerce-cart.html">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ecommerce-checkout-page.html">Checkout Page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-search"></i>
+                                    Search Results
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="search-results-normal.html">Normal Search</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="search-results-media.html">Media Search</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-mail"></i>
+                                    Mail
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mail-inbox.html">Inbox</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mail-message.html">Message</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mail-compose.html">Compose</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="calendar.html">
+                                    <i class="batch-icon batch-icon-calendar"></i>
+                                    Calendar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="fa fa-th-list"></i>
+                                    Tasks
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="task-list.html">Task List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="task-manager.html">Task Manager</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="timeline.html">
+                                    <i class="batch-icon batch-icon-timeline"></i>
+                                    Timeline
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">
+                                    <i class="batch-icon batch-icon-image"></i>
+                                    Gallery <span class="badge badge-danger">New *</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="price-list.html">
+                                    <i class="batch-icon batch-icon-tag-alt-2"></i>
+                                    Price List
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="invoice.html">
+                                    <i class="batch-icon batch-icon-list-alt"></i>
+                                    Invoice
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-browser-alt-close"></i>
+                                    Error Pages
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="error-pages-404.html">404 Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="error-pages-500.html">500 Page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-locked"></i>
+                                    Sign In &amp; Sign Up
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-signin.html">Sign In</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-signin-2.html">Sign In 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-signup.html">Sign Up</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-signup-2.html">Sign Up 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-forgot-password.html">Forgot Password</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-forgot-password-2.html">Forgot Password 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-lock-screen.html">Lock Screen</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="sisu-lock-screen-2.html">Lock Screen 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profiles-member-profile.html">
+                                    <i class="batch-icon batch-icon-users"></i>
+                                    Profile
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav nav-pills flex-column">
+                            <li>
+                                <h6 class="nav-header">Components</h6>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-unite"></i>
+                                    UI Kit <span class="badge badge-danger">New *</span>
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-cards.html">Cards</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-cards-special.html">Special Cards</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-filterizr.html">Filterizr (Filter &amp; Sort) <span class="badge badge-danger">*</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-charts.html">Charts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-buttons.html">Buttons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-typography.html">Typography</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-tooltips-popovers.html">Tooltips &amp; Popovers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-modal-boxes.html">Modal Boxes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-notifications.html">Notifications (Toastr)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-parent" href="#">Icons</a>
+                                        <ul class="nav nav-pills flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ui-icons-batch-icons.html">Batch Icons</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-other-bootstrap-elements.html">Other Bootstrap 4 Elements</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent">
+                                    <i class="batch-icon batch-icon-compose-alt-2"></i>
+                                    Forms
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forms.html">Form Elements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forms-extras.html">Form Extras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forms-validation.html">Form Validation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forms-wizard.html">Form Wizard</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tables.html">
+                                    <i class="batch-icon batch-icon-layout-center-column"></i>
+                                    Tables
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-parent" href="#">
+                                    <i class="batch-icon batch-icon-menu"></i>
+                                    Menu Levels
+                                </a>
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Level 1 - Item 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-parent" href="#">Level 1 - Item 2</a>
+                                        <ul class="nav nav-pills flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Level 2 - Item 1</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Level 2 - Item 2</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-parent" href="#">Level 2 - Item 3</a>
+                                                <ul class="nav nav-pills flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 3 - Item 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 3 - Item 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 3 - Item 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 3 - Item 4</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Level 2 - Item 4</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Level 1 - Item 3</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Level 1 - Item 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>*@
+                </nav>
+                <div class="right-column">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <a style="text-align:center;" class="navbar-brand d-block d-sm-block d-md-block d-lg-none" href="#">
+                            <label style="font-size:17px; text-align:center;">Sistema de Emisiones</label> <br />
+                            <label style="font-size:17px; text-align:center;">Catastro Agua Potable</label>
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button" data-target=".sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <!-- Added Mobile-Only Menu -->
+                        <ul class="navbar-nav ml-auto mobile-only-control d-block d-sm-block d-md-block d-lg-none">
+                            <li class="nav-item dropdown">
+                                @*<a class="nav-link dropdown-toggle" id="navbar-notification-search-mobile" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                        <i class="batch-icon batch-icon-search"></i>
+                                    </a>*@
+                                <ul class="dropdown-menu dropdown-menu-fullscreen" aria-labelledby="navbar-notification-search-mobile">
+                                    <li>
+                                        @*<form class="form-inline my-2 my-lg-0 no-waves-effect">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary btn-gradient waves-effect waves-light" type="button">
+                                                            <i class="batch-icon batch-icon-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>*@
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!--  DEPRECATED CODE:
+                            <div class="navbar-collapse" id="navbarSupportedContent">
+                        -->
+                        <!-- USE THIS CODE Instead of the Commented Code Above -->
+                        <!-- .collapse added to the element -->
+                        <div class="collapse navbar-collapse" id="navbar-header-content">
+                            <ul class="navbar-nav navbar-language-translation mr-auto">
+                                <li class="nav-item dropdown">
+                                    @*<a class="nav-link dropdown-toggle" id="navbar-dropdown-menu-link" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                            <i class="batch-icon batch-icon-book-alt-"></i>
+                                            English
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link">
+                                            <li><a class="dropdown-item" href="#">Français</a></li>
+                                            <li><a class="dropdown-item" href="#">Deutsche</a></li>
+                                            <li><a class="dropdown-item" href="#">Español</a></li>
+                                        </ul>*@
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav navbar-notifications float-right">
+                                <li class="nav-item dropdown">
+                                    @*<a class="nav-link dropdown-toggle" id="navbar-notification-search" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                            <i class="batch-icon batch-icon-search"></i>
+                                        </a>*@
+                                    <ul class="dropdown-menu dropdown-menu-fullscreen" aria-labelledby="navbar-notification-search">
+                                        <li>
+                                            @*<form class="form-inline my-2 my-lg-0 no-waves-effect">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." aria-describedby="basic-addon2">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary btn-gradient waves-effect waves-light" type="button">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>*@
+                                        </li>
+                                    </ul>
+                                </li>
+                                @*<li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle no-waves-effect" id="navbar-notification-calendar" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-calendar fa-2x"></i>
+                                            <span class="notification-number">0</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-md" aria-labelledby="navbar-notification-calendar">
+                                            <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-calendar batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Meeting with Project Manager</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">Right now</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-calendar batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Sales Call</h6>
+                                                            <div class="notification-text">
+                                                                Nibh amet cras sit libero
+                                                            </div>
+                                                            <span class="notification-time">One hour from now</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-calendar batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Email CEO new expansion proposal</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">In 3 days</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-calendar batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Team building exercise</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">In one week</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle no-waves-effect" id="navbar-notification-misc" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bell fa-2x"></i>
+                                            <span class="notification-number">0</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-md" aria-labelledby="navbar-notification-misc">
+                                            <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-bell batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">General Notification</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">Just now</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-cloud-download batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Your Download Is Ready</h6>
+                                                            <div class="notification-text">
+                                                                Nibh amet cras sit libero
+                                                            </div>
+                                                            <span class="notification-time">5 minutes ago</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-tag-alt-2 batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">New Order</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">Yesterday</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="media">
+                                                    <a href="task-list.html">
+                                                        <i class="batch-icon batch-icon-pull batch-icon-xl d-flex mr-3"></i>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-1 notification-heading">Pull Request</h6>
+                                                            <div class="notification-text">
+                                                                Cras sit amet nibh libero
+                                                            </div>
+                                                            <span class="notification-time">3 day ago</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>*@
+                            </ul>
+
+                            <ul class="navbar-nav ml-5 navbar-profile">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbar-dropdown-navbar-profile" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                                        <div class="profile-name">
+                                            @ViewBag.NombreUsuario
+                                        </div>
+                                        <div class="profile-picture bg-gradient bg-primary has-message float-right">
+                                            <img src="~/Content/assets/img/AdminUser.jpg" width="44" height="44" />
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown-navbar-profile">
+                                        @*<li><a class="dropdown-item" href="profiles-member-profile.html">Profile</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="mail-inbox.html">
+                                                    Messages
+                                                    <span class="badge badge-danger badge-pill float-right">3</span>
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="profiles-member-profile.html">Settings</a></li>*@
+                                        <li><a class="dropdown-item" href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+
+                    <div id="idSpinner" class="spinner" style="display:none">
+                        <div id="idCenterDiv" class="center-div">
+                            <div class="">
+                                <div id="idLoader" class="loader">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @Scripts.Render("~/bundles/js")
+                    <main class="main-content p-2" role="main">
+                        <div id="main" class="container">
+                            @Html.AntiForgeryToken()
+                            <div id="panelPrincipal">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Error-->
+    <div class="modal fade" id="idModalProcesoError" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">FootControl</h5>
+
+                </div>
+                <div class="modal-body modal-texto-centrado">
+                    Error al guardar la información
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderSection("scripts", required: false)
+    <script>
+        function cerrarSesion() {
+            window.location = "../InicioSesion/InicioSesion";
+        }
+
+    </script>
+</body>
+</html>

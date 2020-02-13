@@ -1,0 +1,590 @@
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\ApplicationInsights.config
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\csc.exe
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\vbc.exe
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\GridMvc.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Http.Formatting.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\WebGrease.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Http.Formatting.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.xml
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojResolveAssemblyReference.cache
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\ApplicationInsights.config
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\csc.exe
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\vbc.exe
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.pdb
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\GridMvc.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\WebGrease.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.xml
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CoreCompileInputs.cache
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+D:\Documentos\Manuales\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojAssemblyReference.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\ApplicationInsights.config
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\csc.exe
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\vbc.exe
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\GridMvc.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Interfaz.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Servicio.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\WebGrease.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Interfaz.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Servicio.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojAssemblyReference.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CoreCompileInputs.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\ApplicationInsights.config
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\csc.exe
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\vbc.exe
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\AutomaticFootControl.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.Win32.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\netstandard.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.AppContext.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Collections.Concurrent.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Collections.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Collections.NonGeneric.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Collections.Specialized.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ComponentModel.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ComponentModel.EventBasedAsync.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ComponentModel.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ComponentModel.TypeConverter.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Console.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Data.Common.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.Contracts.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.Debug.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.FileVersionInfo.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.Process.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.StackTrace.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.Tools.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.TraceSource.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Diagnostics.Tracing.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Drawing.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Dynamic.Runtime.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Globalization.Calendars.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Globalization.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Globalization.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.Compression.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.Compression.ZipFile.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.FileSystem.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.FileSystem.DriveInfo.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.FileSystem.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.FileSystem.Watcher.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.IsolatedStorage.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.MemoryMappedFiles.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.Pipes.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.IO.UnmanagedMemoryStream.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Linq.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Linq.Expressions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Linq.Parallel.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Linq.Queryable.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Http.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.NameResolution.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.NetworkInformation.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Ping.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Requests.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Security.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Sockets.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.WebHeaderCollection.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.WebSockets.Client.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.WebSockets.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ObjectModel.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Reflection.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Reflection.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Reflection.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Resources.Reader.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Resources.ResourceManager.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Resources.Writer.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Handles.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.InteropServices.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Numerics.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Serialization.Formatters.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Serialization.Json.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Serialization.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Runtime.Serialization.Xml.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Claims.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Cryptography.Algorithms.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Cryptography.Csp.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Cryptography.Encoding.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Cryptography.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.Principal.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Security.SecureString.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Text.Encoding.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Text.Encoding.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Text.RegularExpressions.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.Overlapped.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.Tasks.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.Tasks.Parallel.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.Thread.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.ThreadPool.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Threading.Timer.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.ValueTuple.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.ReaderWriter.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.XDocument.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.XmlDocument.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.XmlSerializer.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.XPath.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Xml.XPath.XDocument.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\GridMvc.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Servicio.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Net.Http.Formatting.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\VelbyRestModelo.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\WebGrease.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Interfaz.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Servicio.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\Newtonsoft.Json.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Optimization.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\VelbyRestModelo.pdb
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Razor.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Helpers.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\System.Web.Mvc.xml
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojAssemblyReference.cache
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CoreCompileInputs.cache
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+D:\Desarrollos\AutomaticFootControl\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\ApplicationInsights.config
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\csc.exe
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\vbc.exe
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.Win32.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\netstandard.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.AppContext.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Collections.Concurrent.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Collections.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Collections.NonGeneric.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Collections.Specialized.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ComponentModel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ComponentModel.EventBasedAsync.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ComponentModel.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ComponentModel.TypeConverter.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Console.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Data.Common.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.Contracts.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.Debug.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.FileVersionInfo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.Process.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.StackTrace.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.Tools.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.TraceSource.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Diagnostics.Tracing.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Drawing.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Dynamic.Runtime.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Globalization.Calendars.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Globalization.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Globalization.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.Compression.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.Compression.ZipFile.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.FileSystem.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.FileSystem.DriveInfo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.FileSystem.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.FileSystem.Watcher.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.IsolatedStorage.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.MemoryMappedFiles.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.Pipes.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.IO.UnmanagedMemoryStream.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Linq.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Linq.Expressions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Linq.Parallel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Linq.Queryable.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Http.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.NameResolution.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.NetworkInformation.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Ping.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Requests.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Security.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Sockets.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.WebHeaderCollection.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.WebSockets.Client.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.WebSockets.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ObjectModel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Reflection.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Reflection.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Reflection.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Resources.Reader.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Resources.ResourceManager.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Resources.Writer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Handles.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.InteropServices.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Numerics.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Serialization.Formatters.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Serialization.Json.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Serialization.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Runtime.Serialization.Xml.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Claims.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Cryptography.Algorithms.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Cryptography.Csp.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Cryptography.Encoding.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Cryptography.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.Principal.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Security.SecureString.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Text.Encoding.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Text.Encoding.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Text.RegularExpressions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.Overlapped.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.Tasks.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.Tasks.Parallel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.Thread.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.ThreadPool.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Threading.Timer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.ValueTuple.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.ReaderWriter.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.XDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.XmlDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.XmlSerializer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.XPath.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Xml.XPath.XDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Antlr3.Runtime.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\GridMvc.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Servicio.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Net.Http.Formatting.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Helpers.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Mvc.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Optimization.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Razor.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\VelbyRestModelo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\WebGrease.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Servicio.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Optimization.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\VelbyRestModelo.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Razor.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Helpers.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\System.Web.Mvc.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\ApplicationInsights.config
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\csc.exe
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\System.Collections.Immutable.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\System.Reflection.Metadata.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\vbc.exe
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\roslyn\VBCSCompiler.exe.config
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.dll.config
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\AutomaticFootControl.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Antlr3.Runtime.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\GridMvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Web.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.ApplicationInsights.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Servicio.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Net.Http.Formatting.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Helpers.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Mvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Optimization.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Razor.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Deployment.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Razor.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\WebGrease.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Comun.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Servicio.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Antlr3.Runtime.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.DependencyCollector.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.Web.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.AI.WindowsServer.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.ApplicationInsights.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Optimization.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Razor.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Deployment.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Webpages.Razor.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Helpers.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\System.Web.Mvc.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Razor.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Helpers.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\bin\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb

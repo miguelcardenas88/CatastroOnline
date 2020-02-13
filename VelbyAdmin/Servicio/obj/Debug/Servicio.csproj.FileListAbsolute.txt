@@ -1,0 +1,245 @@
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Servicio.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Servicio.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Interfaz.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Interfaz.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\obj\Debug\Servicio.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Servicio\obj\Debug\Servicio.pdb
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Servicio.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Servicio.pdb
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Microsoft.Win32.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\netstandard.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.AppContext.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Collections.Concurrent.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Collections.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Collections.NonGeneric.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Collections.Specialized.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ComponentModel.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ComponentModel.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ComponentModel.TypeConverter.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Console.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Data.Common.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.Contracts.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.Debug.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.Process.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.Tools.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.TraceSource.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Drawing.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Dynamic.Runtime.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Globalization.Calendars.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Globalization.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Globalization.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.Compression.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.Compression.ZipFile.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.FileSystem.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.FileSystem.Watcher.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.IsolatedStorage.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.MemoryMappedFiles.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.Pipes.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Linq.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Linq.Expressions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Linq.Parallel.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Linq.Queryable.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Http.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.NameResolution.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.NetworkInformation.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Ping.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Requests.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Security.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.Sockets.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.WebHeaderCollection.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.WebSockets.Client.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Net.WebSockets.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ObjectModel.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Reflection.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Reflection.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Reflection.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Resources.Reader.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Resources.ResourceManager.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Resources.Writer.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Handles.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.InteropServices.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Numerics.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Serialization.Json.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Runtime.Serialization.Xml.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Claims.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Cryptography.Csp.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.Principal.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Security.SecureString.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Text.Encoding.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Text.Encoding.Extensions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Text.RegularExpressions.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.Overlapped.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.Tasks.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.Tasks.Parallel.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.Thread.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.ThreadPool.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Threading.Timer.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.ValueTuple.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.ReaderWriter.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.XDocument.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.XmlDocument.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.XmlSerializer.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.XPath.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Newtonsoft.Json.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\VelbyRestModelo.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Interfaz.pdb
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\Newtonsoft.Json.xml
+D:\Desarrollos\AutomaticFootControl\Servicio\bin\Debug\VelbyRestModelo.pdb
+D:\Desarrollos\AutomaticFootControl\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+D:\Desarrollos\AutomaticFootControl\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+D:\Desarrollos\AutomaticFootControl\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+D:\Desarrollos\AutomaticFootControl\Servicio\obj\Debug\Servicio.dll
+D:\Desarrollos\AutomaticFootControl\Servicio\obj\Debug\Servicio.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Servicio.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Servicio.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Microsoft.Win32.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\netstandard.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.AppContext.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Collections.Concurrent.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Collections.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Collections.NonGeneric.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Collections.Specialized.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ComponentModel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ComponentModel.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ComponentModel.TypeConverter.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Console.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Data.Common.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.Contracts.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.Debug.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.Process.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.Tools.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.TraceSource.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Drawing.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Dynamic.Runtime.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Globalization.Calendars.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Globalization.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Globalization.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.Compression.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.Compression.ZipFile.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.FileSystem.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.FileSystem.Watcher.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.IsolatedStorage.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.MemoryMappedFiles.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.Pipes.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Linq.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Linq.Expressions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Linq.Parallel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Linq.Queryable.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Http.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.NameResolution.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.NetworkInformation.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Ping.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Requests.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Security.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.Sockets.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.WebHeaderCollection.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.WebSockets.Client.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Net.WebSockets.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ObjectModel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Reflection.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Reflection.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Reflection.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Resources.Reader.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Resources.ResourceManager.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Resources.Writer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Handles.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.InteropServices.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Numerics.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Serialization.Json.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Runtime.Serialization.Xml.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Claims.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Cryptography.Csp.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.Principal.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Security.SecureString.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Text.Encoding.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Text.Encoding.Extensions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Text.RegularExpressions.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.Overlapped.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.Tasks.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.Tasks.Parallel.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.Thread.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.ThreadPool.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Threading.Timer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.ValueTuple.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.ReaderWriter.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.XDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.XmlDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.XmlSerializer.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.XPath.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\VelbyRestModelo.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\bin\Debug\VelbyRestModelo.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\obj\Debug\Servicio.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Servicio\obj\Debug\Servicio.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Servicio.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Servicio.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\System.Web.Mvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Comun.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\System.Web.Mvc.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\bin\Debug\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.pdb

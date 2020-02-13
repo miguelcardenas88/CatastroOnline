@@ -1,0 +1,121 @@
+﻿@model AutomaticFootControl.Models.Producto.ProductoModelo
+@using AutomaticFootControl.Models.Producto
+
+@using (Html.BeginForm("GestionProducto", "Producto", FormMethod.Post, new { @id = "frmGestionProducto" }))
+{
+    @Html.HiddenFor(m => m.IdServicios)
+    @Html.HiddenFor(m => m.StrImagen)
+    @Html.HiddenFor(m => m.TipoAccion)
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Producto</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+        <div class="gestionProducto" id="tab1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form method="post" id="wizard-stage-1">
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Descripcion)
+                                    @Html.ValidationMessageFor(m => m.Descripcion, "", new { @class = "texto-requerido" })
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control footPlace", @placeholder = "Descripción", @required = "required", @maxlength = "100" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Genero:</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Genero,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "H" , Text = "Hombre" },
+                                             new SelectListItem { Value = "M" , Text = "Mujer" }
+                                          },
+                                        new { @class= "form-control", @id = "Genero", @name = "Genero", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Estado:</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Estado,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "0" , Text = "Inactivo" },
+                                             new SelectListItem { Value = "1" , Text = "Activo" }
+                                          },
+                                        new { @class= "form-control", @id = "IdServicio", @name = "IdServicio", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="StrImagen" name="StrImagen" type="hidden" />
+                                    <input type="file" id="input"><br>
+                                    <img id="output" height="200" width="400">
+                                    <canvas id="canvas" style="display:none"></canvas>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="next">
+                        <input class="btn btn-primary" type="button" value="Guardar" id="btnGuardarProducto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+<script>
+
+    $(document).ready(function () {
+        CargarImagen();
+            debugger;
+            if ($("#StrImagen").val() != null) {
+                mostrarImagenEditar($("#StrImagen").val());
+            }
+        });
+
+        $("#btnGuardarProducto").click(function () {
+            if ($("#frmGestionProducto").valid()) {
+                $("#StrImagen").val($("#output").attr('src').split(',')[1].trim());
+                var formData = $('#frmGestionProducto').serializeArray();
+                ejecutePost('@Url.Action("Nuevo", "Producto")', formData);
+            }
+        });
+
+        function mostrarImagenEditar(input) {
+            $("#output").attr('src', "data:image/jpeg;base64," + input);
+            $("#output").css('visibility', 'visible');
+            $("#fuimege").val("Imagen");
+        }
+
+</script>
+

@@ -1,0 +1,106 @@
+﻿
+@*@model IEnumerable<AutomaticFootControl.Models.Empresa.EmpresaModel>
+    @using GridMvc.Html
+    @using AutomaticFootControl.Models.Empresa*@
+
+@*@{ 
+    string strIdEmpresa = string.Empty;
+}
+
+@using (Html.BeginForm("GestionEmpresa", "Empresa", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmListarEmpresa" }))
+{
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Lista de Empresas</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+
+        <div class="gestionEmpresa" id="tab1">
+            <div class="card">
+                <div class="body-tabla">
+                    <div class="next">
+                        <input class="btn btn-primary" type="submit" value="Nuevo" id="btnNuevoEmpresa" />
+                    </div>
+
+                    <div class="texto-centrado">
+                        <div class="table-responsive">
+
+                            @if (Model != null)
+                            {
+                                @Html.Grid(Model).Columns(Columns =>
+                           {
+                           Columns.Add(c => c.NombreEmpresa).Titled("Nombre").Css("cabecera-grid").Filterable(true);
+                           Columns.Add(c => c.DireccionEmpresa).Titled("Dirección").Css("cabecera-grid").Filterable(true);
+                           Columns.Add(c => c.FechaRegistro).Titled("Fecha registro").Css("cabecera-grid").Filterable(true).Format(Constantes.FORMATO_FECHA_TABLA_DDMMYYY);
+                           Columns.Add(c => c.TelefonoEmpresa).Titled("Teléfono").Css("cabecera-grid").Filterable(true);
+                           Columns.Add(c => c.EmailEmpresa).Titled("Email").Css("cabecera-grid").Filterable(true);
+                           Columns.Add()
+                           .Encoded(false)
+                           .Sanitized(false)
+                           .SetWidth(30)
+                           .RenderValueAs(o => @<div class="icon"><i onclick="Editar(@Html.EncodedActionLink("DatoEncriptado", "Editar", "Empresa", new { IdEmpresa = o.IdEmpresa } , null))" class="fa fa-pencil-square-o fa-2x Esperando" title="Editar"></i></div>);
+
+                                           Columns.Add()
+                                           .Encoded(false)
+                                           .Sanitized(false)
+                                           .SetWidth(50)
+                                           .RenderValueAs(o => @<div class="icon"><i onclick="Eliminar(@Html.EncodedActionLink("DatoEncriptado", "Eliminar", "Empresa", new { IdEmpresa = o.IdEmpresa }, null))" class="fa fa-times fa-2x" title="Eliminar"></i></div>);
+
+                                       }).WithPaging(7).Sortable(true)
+                            }
+                            else
+                            {
+                                <div>
+                                    <h5>No se puede obtener la información</h5>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+
+}
+
+<script>
+
+    function Editar(urlEditar)
+    {
+        document.location = urlEditar;
+    }
+
+    function Eliminar(UrlEliminar)
+    {
+        varUrlEliminar = UrlEliminar;
+        $('#IdEliminarRegistro').modal('show');
+    }
+</script>*@
+
+@Html.AntiForgeryToken();
+@*@Html.Partial("_ListarEmpresa");
+@Html.RenderPartial("_ListarEmpresa");
+
+<div>
+    <input type="button" id="btnListarEmpresas" value="Listar Empresas" />
+</div>*@
+<div>
+    @Html.Partial("_ListarEmpresa");
+</div>
+@*<script type="text/javascript">
+
+    $(document).ready(function () {
+        var url = "@Url.Action("_ListarEmpresa", "Empresa")";        
+        ejecutar.accionControladorLista(url);
+    });
+
+</script>*@

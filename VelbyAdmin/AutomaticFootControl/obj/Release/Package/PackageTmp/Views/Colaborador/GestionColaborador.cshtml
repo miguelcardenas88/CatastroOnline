@@ -1,0 +1,250 @@
+﻿@model AutomaticFootControl.Models.Usuario.UsuarioModelo
+@using AutomaticFootControl.Models.Usuario
+
+@using (Html.BeginForm("GestionColaborador", "Colaborador", FormMethod.Post, new { @id = "frmGestionColaborador" }))
+{
+    @Html.HiddenFor(m => m.IdColaborador)
+    @Html.HiddenFor(m => m.Foto)
+    @Html.HiddenFor(m => m.Hojavida)
+    @Html.HiddenFor(m => m.RecordPolicial)
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Colaborador</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+        <div class="gestionColaborador" id="tab1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8 centrar-formulario">
+                            <form method="post" id="wizard-stage-1">
+                                @Html.Label("Foto")
+                                <div class="form-group">
+                                    <input id="fuimege" type="file" onchange="mostrarImagen(this);" />
+                                    <img id="imgPreview" height="100" required width="90" src="" style="border-width: 10px; visibility: hidden;" />
+                                    <input id="Foto" name="Foto" type="hidden" />
+                                </div>
+
+
+                                @Html.Label("Hoja de vida")
+                                <div class="form-group">
+                                    <input id="idhojaVida" type="file" onchange="cargarPdf(this, 'Hojavida');" />
+                                    <input id="Hojavida" name="Hojavida" type="hidden">
+                                </div>
+
+
+                                @Html.Label("Récord policial")
+                                <div class="form-group">
+                                    <input id="idRecordPolicial" type="file" onchange="cargarPdf(this, 'RecordPolicial');" />
+                                    <input id="RecordPolicial" name="RecordPolicial" type="hidden">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        @*@Html.Label("Nombre Completo")*@
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Nombres, new { @class = "form-control", @placeholder = "Nombres", @required = "required", @maxlength = "100" })
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Apellidos, new { @class = "form-control", @placeholder = "Apellidos", @required = "required", @maxlength = "100" })
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    @*@Html.Label("Identificación")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DocumentoIdentidad, new { @class = "form-control numeros", @placeholder = "Identificación", @required = "required", @maxlength = "10", @minlength = "10" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @*@Html.Label("Celular")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Celular, new { @class = "form-control numeros", @placeholder = "Celular", @required = "required", @maxlength = "10" })
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    @*@Html.Label("Correo")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", @placeholder = "Correo", @required = "required", @maxlength = "100" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @*@Html.Label("Dirección")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DireccionDomicilio, new { @class = "form-control", @placeholder = "Dirección de domicilio", @required = "required", @maxlength = "300" })
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        @Html.CheckBoxFor(m => m.Entrevista, new { @class = "custom-control-input", @id = "idEntrevista" })
+                                        <label class="custom-control-label" for="idEntrevista">Entrevista</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @*@Html.Label("Descripción Entrevista")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DescripcionEntrevista, new { @class = "form-control", @placeholder = "Descripción Entrevista", @required = "required", @maxlength = "100" })
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        @Html.CheckBoxFor(m => m.PruebaTecnica, new { @class = "custom-control-input", @id = "idPrueba" })
+                                        <label class="custom-control-label" for="idPrueba">Prueba</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @*@Html.Label("Descripción Prueba")*@
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DescripcionPrueba, new { @class = "form-control", @placeholder = "Descripción Prueba", @required = "required", @maxlength = "100" })
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Estado:</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Estado,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "0" , Text = "Inactivo" },
+                                             new SelectListItem { Value = "1" , Text = "Activo" },
+                                             new SelectListItem { Value = "2" , Text = "Bloqueado" }
+                                          },
+                                        new { @class= "form-control", @id = "IdServicio", @name = "IdServicio", @required = "required" })
+                                    </div>
+                                </div>
+
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="next">
+                        <input class="btn btn-primary" type="button" value="Guardar" id="btnGuardarColaborador" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id="idFoto" name="idHojavida" type="hidden">
+    }
+}
+
+<script>
+
+    $(document).ready(function () {
+        if ($("#Hojavida").val() != null) {
+            cargarPdf($("#idhojaVida"), 'Hojavida');
+        }
+
+        if ($("#RecordPolicial").val() != null) {
+            cargarPdf($("#idRecordPolicial"), 'RecordPolicial');
+        }
+        if ($("#Foto").val() != null) {
+            mostrarImagenEditar($("#Foto").val());
+        }
+
+    });
+
+    $("#btnGuardarColaborador").click(function () {
+        if ($("#frmGestionColaborador").valid()) {
+            $("#Foto").val($("#imgPreview").attr('src').split(',')[1].trim());
+            var formData = $('#frmGestionColaborador').serializeArray();
+            ejecutePost('@Url.Action("Editar", "Colaborador")', formData);
+        }
+    });
+
+    function mostrarImagenEditar(input) {
+        $("#imgPreview").attr('src', "data:image/jpeg;base64," + input);
+        $("#imgPreview").css('visibility', 'visible');
+        $("#fuimege").val("Imagen");
+    }
+
+    function mostrarImagen(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#imgPreview").css('visibility', 'visible');
+                $("#imgPreview").attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function cargarPdf(input, idtHidden) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#" + idtHidden).val(e.target.result.split(',')[1]);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>

@@ -1,0 +1,229 @@
+﻿@*@model IEnumerable<AutomaticFootControl.Models.Empresa.EmpresaModel>
+@using GridMvc.Html
+@using AutomaticFootControl.Models
+
+@{
+    string strIdEmpresa = string.Empty;
+}
+
+@using (Html.BeginForm("_ListarEmpresa", "Empresa", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmListarEmpresa" }))
+{
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Lista de Empresas</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+
+        <div class="gestionEmpresa" id="tab1">
+            <div class="card">
+                <div class="body-tabla">
+                    <div class="next">
+                        <button class="btn btn-primary" onclick="" type="button" id="btnNuevoEmpresa"><i class="fa fa-plus-square"></i> Nuevo</button>
+                    </div>
+
+                    <div class="texto-centrado">
+                        <div class="table-responsive">
+
+
+                           
+
+                            <div>
+                                @if (Model != null)
+                                {
+                                    @Html.Grid(Model).Columns(Columns =>
+                               {
+                               Columns.Add(c => c.NombreEmpresa).Titled("Nombre").Css("cabecera-grid").Filterable(true);
+                               Columns.Add(c => c.DireccionEmpresa).Titled("Dirección").Css("cabecera-grid").Filterable(true);
+                               Columns.Add(c => c.FechaRegistro).Titled("Fecha registro").Css("cabecera-grid").Filterable(true).Format(Constantes.FORMATO_FECHA_TABLA_DDMMYYY);
+                               Columns.Add(c => c.TelefonoEmpresa).Titled("Teléfono").Css("cabecera-grid").Filterable(true);
+                               Columns.Add(c => c.EmailEmpresa).Titled("Email").Css("cabecera-grid").Filterable(true);
+                               Columns.Add()
+                               .Encoded(false)
+                               .Sanitized(false)
+                               .SetWidth(30)
+                               .RenderValueAs(o => @<div class="icon"><i onclick="Editar(@Html.EncodedActionLink("DatoEncriptado", "Editar", "Empresa", new { IdEmpresa = o.IdEmpresa } , null))" class="fa fa-pencil-square-o fa-2x Esperando" title="Editar"></i></div>);
+
+                               Columns.Add()
+                               .Encoded(false)
+                               .Sanitized(false)
+                               .SetWidth(50)
+                               .RenderValueAs(o => @<div class="icon"><i onclick="Eliminar(@Html.EncodedActionLink("DatoEncriptado", "Eliminar", "Empresa", new { IdEmpresa = o.IdEmpresa }, null))" class="fa fa-times fa-2x" title="Eliminar"></i></div>);
+
+                               }).WithPaging(13).Sortable(true)
+                                }
+                                else
+                                {
+                                    <div>
+                                        <h5>No se puede obtener la información 2222</h5>
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+
+}
+
+<script>
+
+    $("#btnNuevoEmpresa").click(function () {
+        var url = "@Url.Action("_GestionEmpresa", "Empresa")";
+        ejecutar.accionControladorLista(url);
+    });
+
+    function Editar(urlEditar) {
+        document.location = urlEditar;
+    }
+
+    function Eliminar(UrlEliminar) {
+        varUrlEliminar = UrlEliminar;
+        $('#IdEliminarRegistro').modal('show');
+    }
+</script>*@
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+       
+        <div class="right-column">
+         
+            <main class="main-content p-5" role="main">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Tables</h1>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 pb-5">
+                                        <p class="lead">
+                                            A demo list of all the types of tables included in QuillPro - Whether it's <strong>Basic</strong>, <strong>Fully Responsive</strong> or <strong>Datatables</strong>.
+                                        </p>
+                                    </div>
+ 
+                                    <div class="col-lg-12 pb-5">
+                                        <h2>15. Datatables</h2>
+                                        <p>
+                                            Add <code>.table-datatable</code> class to the <code>table</code> tag to create a datatable. You can also add the <code>.table-responsive</code> class to the container holding the <code>table</code> to make it responsive
+                                        </p>
+                                        <div class="table-responsive">
+                                            <table id="datatable-1" class="table table-datatable table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Film Title</th>
+                                                        <th>Released</th>
+                                                        <th>Studio</th>
+                                                        <th>Worldwide Gross</th>
+                                                        <th>Domestic Gross</th>
+                                                        <th>Foreign Gross</th>
+                                                        <th>Budget</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Frozen</td>
+                                                        <td>2013</td>
+                                                        <td>
+                                                            <span class="badge badge-primary">Disney</span>
+                                                        </td>
+                                                        <td>$1,232,617,000</td>
+                                                        <td>$400,617,000</td>
+                                                        <td>$832,000,000</td>
+                                                        <td>$150,000,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Toy Story 3</td>
+                                                        <td>2010</td>
+                                                        <td>
+                                                            <span class="badge badge-info">Disney Pixar</span>
+                                                        </td>
+                                                        <td>$1,063,171,911</td>
+                                                        <td>$415,004,880</td>
+                                                        <td>$648,167,031</td>
+                                                        <td>$200,000,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>The Lion King</td>
+                                                        <td>1994</td>
+                                                        <td>
+                                                            <span class="badge badge-primary">Disney</span>
+                                                        </td>
+                                                        <td>$987,483,777</td>
+                                                        <td>$422,783,777</td>
+                                                        <td>$564,700,000</td>
+                                                        <td>$45,000,000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <footer>
+                            Powered by - <a href="http://base5builder.com/?click_source=quillpro_footer_link" target="_blank" style="font-weight:300;color:#ffffff;background:#1d1d1d;padding:0 3px;">Base<span style="color:#ffa733;font-weight:bold">5</span>Builder</a>
+                        </footer>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS - REQUIRED START -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap core JavaScript -->
+<!-- JQuery -->
+<script type="text/javascript" src="assets/js/jquery/jquery-3.1.1.min.js"></script>
+<!-- Popper.js - Bootstrap tooltips -->
+<script type="text/javascript" src="assets/js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="assets/js/bootstrap/mdb.min.js"></script>
+
+
+<!-- Velocity -->
+<script type="text/javascript" src="assets/plugins/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="assets/plugins/velocity/velocity.ui.min.js"></script>
+<!-- Custom Scrollbar -->
+<script type="text/javascript" src="assets/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- jQuery Visible -->
+<script type="text/javascript" src="assets/plugins/jquery_visible/jquery.visible.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="assets/js/misc/ie10-viewport-bug-workaround.js"></script>
+
+<!-- SCRIPTS - REQUIRED END -->
+<!-- SCRIPTS - OPTIONAL START -->
+<!-- Image Placeholder -->
+<script type="text/javascript" src="assets/js/misc/holder.min.js"></script>
+<!-- Datatables -->
+<script type="text/javascript" src="assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="assets/plugins/datatables/js/dataTables.responsive.min.js"></script>
+<!-- <script type="text/javascript" src="assets/plugins/datatables/js/responsive.bootstrap4.min.js"></script> -->
+<!-- SCRIPTS - OPTIONAL END -->
+<!-- QuillPro Scripts -->
+<script type="text/javascript" src="assets/js/scripts.js"></script>

@@ -1,0 +1,26 @@
+D:\Desarrollos\AutomaticFootControl\Interfaz\bin\Release\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\Interfaz\bin\Release\Interfaz.pdb
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Release\Interfaz.csprojAssemblyReference.cache
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Release\Interfaz.csproj.CoreCompileInputs.cache
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Release\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Release\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\bin\Release\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\bin\Release\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Release\Interfaz.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Release\Interfaz.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Release\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Release\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\System.Web.Mvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Comun.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\System.Web.Mvc.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Release\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Release\Interfaz.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Release\Interfaz.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Release\Interfaz.csproj.CopyComplete
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Release\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Release\Interfaz.pdb

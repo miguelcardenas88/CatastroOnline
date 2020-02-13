@@ -1,0 +1,128 @@
+﻿@model AutomaticFootControl.Models.Horario.HorarioModel
+@using AutomaticFootControl.Models
+
+@using (Html.BeginForm("GestionHorario", "Horario", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmGestionHorario" }))
+{
+    @Html.HiddenFor(m => m.TipoAccion)
+    @Html.HiddenFor(m => m.IdHorario)
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Horario</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+        <div class="gestionHorario" id="tab1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form method="post" id="wizard-stage-1">
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NombreHorario)
+                                    @Html.ValidationMessageFor(m => m.NombreHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NombreHorario, new { @class = "form-control footPlace", @placeholder = "Nombre" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.DescripcionHorario)
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DescripcionHorario, new { @class = "form-control footPlace", @placeholder = "Descripción" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.ColorHorario)
+                                    @Html.ValidationMessageFor(m => m.ColorHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.ColorHorario, new { @class = "form-control footPlace", @placeholder = "Color" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.FechaInicioHorario)
+                                    @Html.ValidationMessageFor(m => m.FechaInicioHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.FechaInicioHorario, new { @class = "form-control foramto-fecha", @Value = Model.FechaInicioHorario.ToString(Constantes.FORMATO_FECHA_FORM_DDMMYYY) })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.FechaFinHorario)
+                                    @Html.ValidationMessageFor(m => m.FechaFinHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.FechaFinHorario, new { @class = "form-control foramto-fecha", @Value = Model.FechaFinHorario.ToString(Constantes.FORMATO_FECHA_FORM_DDMMYYY) })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.HoraInicioHorario)
+                                    @Html.ValidationMessageFor(m => m.HoraInicioHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.HoraInicioHorario, new { @class = "form-control foramto-hora", @placeholder = "Hora Inicio", @Value = Model.HoraInicioHorario.ToString(Constantes.FORMATO_HORA_FORM_HHMM) })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.HoraFinHorario)
+                                    @Html.ValidationMessageFor(m => m.HoraFinHorario, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.HoraFinHorario, new { @class = "form-control foramto-hora", @placeholder = "Hora Fin", @Value = Model.HoraFinHorario.ToString(Constantes.FORMATO_HORA_FORM_HHMM) })
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="next">
+                        <input class="btn btn-primary" type="submit" value="Guardar" id="btnGuardarHorario" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+

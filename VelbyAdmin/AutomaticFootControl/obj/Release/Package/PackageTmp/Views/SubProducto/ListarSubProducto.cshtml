@@ -1,0 +1,140 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Index";
+
+
+}
+@using (Html.BeginForm("Nuevo", "SubProducto", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmListarSubProducto" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Lista de Sub Productos</h4>
+        </div>
+    </div>
+
+    <div class="next">
+        <input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevoSubProducto" />
+    </div>
+
+    <div class="table-responsive" style="width:100%; margin:0 auto;">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Costo</th>
+                    <th>Estado</th>
+                    <th>Servicio</th>
+                    <th>Tiempo Duracion</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!-------------------------------------------------->
+    <!--   Inicio Modal Aceptar Eliminar un registro  -->
+    <!-------------------------------------------------->
+
+    <div class="modal fade" id="IdEliminarRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">BellezApp</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Esta seguro de eliminar el registro</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnEliminar" class="btn btn-secondary Esperando" data-dismiss="modal">Eliminar</button>
+                    <button type="button" id="btnCancelar" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    tr.even {
+        background-color: #F5F5F5 !important;
+    }
+</style>
+
+<script>
+    var idRedistro = "";
+    $(document).ready(function () {
+        $("#btnNuevoSubProducto").click(function () {
+            var formData = $('#frmListarSubProducto').serializeArray();
+            ejecutePost('@Url.Action("Nuevo", "SubProducto")', formData);
+        });
+
+        $("#btnEliminar").click(function () {
+            var data = { idSubServicio: idRedistro};
+            ejecutePost('@Url.Action("Eliminar", "SubProducto")', data);
+        });
+
+        //"url": "/AdminBellezApp/SubProducto/loaddata",
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/AdminBellezApp/SubProducto/loaddata",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        return '<div class="icon"><i onclick="Editar(' + JsonResultRow.IdSubservicio + ')" class="fa fa-pencil-square-o fa-2x " title="Editar"></i></div>';
+                    }
+                },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        return '<div class="icon"><i onclick="Eliminar(' + JsonResultRow.IdSubservicio + ')" class="fa fa-times fa-2x " title="Eliminar"></i></div>';
+                    }
+                },
+                { "data": "Nombre", "autoWidth": true },
+                { "data": "Descripcion", "autoWidth": true },
+                { "data": "Costo", "autoWidth": true },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        var estado;
+                        if (JsonResultRow.Estado == 0)
+                            estado = 'Inactivo'
+                        if (JsonResultRow.Estado == 1)
+                            estado = 'Activo'
+                        return estado;
+                    }
+                },
+                { "data": "IdServicio", "autoWidth": true },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        debugger;
+                        var nowDate = new Date(JsonResultRow.TiempoDuracionServicio);
+
+                        return '<div style="width:100px;">' + nowDate.format("HH:MM:ss") + '</div>';
+                    }
+                },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        return '<div style="width:100px;"> <img height="80" width="160" src="data:image/jpeg;base64,' + JsonResultRow.StrImagen + '" style="border-width: 10px; visibility: visible;"/> </div>';
+                    }
+                },
+            ]
+        });
+    });
+
+    function Editar(idSubServicio) {
+        var data = { idSubServicio: idSubServicio};
+        ejecutePost('@Url.Action("Editar", "SubProducto")', data);
+    }
+
+    function Eliminar(idSubServicio) {
+        idRedistro = idSubServicio;
+        $('#IdEliminarRegistro').modal('show');
+    }
+
+</script>
+

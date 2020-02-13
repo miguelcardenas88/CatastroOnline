@@ -1,0 +1,468 @@
+﻿@model Comun.Modelo.modFicha
+@using Comun.Modelo
+
+
+@using (Html.BeginForm("GestionSubProducto", "Producto", FormMethod.Post, new { @id = "frmNuevaFicha" }))
+{
+    @*@Html.HiddenFor(m => m.IdSubservicio)*@
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Nueva ficha</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+        <div class="gestionSubProducto" id="tab1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @if (ViewBag.Mensaje != null)
+                            {
+                                <div style="text-align: center; color: blue;">
+                                    <h4>
+                                        <label style="color: blue;">@ViewBag.Mensaje</label>
+                                    </h4>
+                                </div>
+                            }
+                            <form method="post" id="wizard-stage-1">
+
+                                <div class="form-group">
+                                    <label>Código único</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.CodigoUnico, new { @class = "form-control footPlace", @placeholder = "Código único", @required = "required", @autocomplete = "off" })
+                                    </div>
+                                    <div class="next" style="text-align: center;">
+                                        <input class="btn btn-primary" type="button" value="Consultar" id="btnConsultarCodigo" />
+                                        @*<input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevo" />*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Código catastral d</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.CodigoCatastral, new { @id = "idCodigoCatastral", @class = "form-control footPlace", @placeholder = "Código catastral", @required = "required" })
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>Clave anterior</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.ClaveAnterior, new { @class = "form-control footPlace", @placeholder = "Clave anterior", @required = "required", @autocomplete = "off" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Tipo identificación:</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.TipoIdentificacion,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "Cédula" },
+                                             new SelectListItem { Value = "2" , Text = "Ruc" },
+                                             new SelectListItem { Value = "3" , Text = "Pasaporte" },
+                                             new SelectListItem { Value = "4" , Text = "Otro" }
+                                          },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Número identificación</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NumeroIdentificacion, new { @class = "form-control footPlace", @placeholder = "Número identificación", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nombre propietario</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NombrePropietario, new { @class = "form-control footPlace", @placeholder = "Nombre propietario", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Propietario anterior</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.PropietarioAnterior, new { @class = "form-control footPlace", @placeholder = "Propietario anterior", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Dirección</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control footPlace", @placeholder = "Dirección", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Barrio</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Barrio, new { @class = "form-control footPlace", @placeholder = "Barrio", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Uso predio</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.UsoPredio,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             //new SelectListItem { Value = "1" , Text = "Agricola" },
+                                             //new SelectListItem { Value = "2" , Text = "Agroindustrial" },
+                                             //new SelectListItem { Value = "3" , Text = "Bienestar social" },
+                                             new SelectListItem { Value = "1" , Text = "Comercial" },
+                                             //new SelectListItem { Value = "5" , Text = "Comercial y recidencial" },
+                                             //new SelectListItem { Value = "6" , Text = "Culto" },
+                                             //new SelectListItem { Value = "7" , Text = "Diversión - Entretenimieto " },
+                                             //new SelectListItem { Value = "8" , Text = "Edificio de hotel" },
+                                             //new SelectListItem { Value = "9" , Text = "Educación Inicial-Primaria-Secundaria" },
+                                             //new SelectListItem { Value = "10" , Text = "Educación superior" },
+                                             //new SelectListItem { Value = "11" , Text = "Espacio público" },
+                                             //new SelectListItem { Value = "12" , Text = "Hospedaje" },
+                                             new SelectListItem { Value = "2" , Text = "Industrial" },
+                                             //new SelectListItem { Value = "14" , Text = "Recreativo - Deportivo" },
+                                             //new SelectListItem { Value = "15" , Text = "Religioso" },
+                                             new SelectListItem { Value = "3" , Text = "Residencial" },
+                                             //new SelectListItem { Value = "17" , Text = "Seguridad" },
+                                             //new SelectListItem { Value = "18" , Text = "Servicios privados" },
+                                             //new SelectListItem { Value = "19" , Text = "Servicios públicos" },
+                                             //new SelectListItem { Value = "20" , Text = "Sin uso" },
+                                             //new SelectListItem { Value = "21" , Text = "Otro" }
+                                          },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Escritura</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Escritura,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "Tiene escritura" },
+                                             new SelectListItem { Value = "2" , Text = "No tiene escritura" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Ocupacion</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Ocupacion,
+                                         new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "Edificada" },
+                                             new SelectListItem { Value = "2" , Text = "No Edificada" },
+                                             new SelectListItem { Value = "3" , Text = "En construcción" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Localizacion</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Localizacion,
+                                         new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "Bifrontal" },
+                                             new SelectListItem { Value = "2" , Text = "En cabecera" },
+                                             new SelectListItem { Value = "3" , Text = "En pasaje" },
+                                             new SelectListItem { Value = "4" , Text = "Esquinero" },
+                                             new SelectListItem { Value = "5" , Text = "Interior" },
+                                             new SelectListItem { Value = "6" , Text = "Intermedio" },
+                                             new SelectListItem { Value = "7" , Text = "Manzanero" },
+                                             new SelectListItem { Value = "8" , Text = "Triangulo" },
+                                             new SelectListItem { Value = "9" , Text = "Otro" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Número piso</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NumeroPiso, new { @class = "form-control footPlace", @placeholder = "Número piso", @type = "number", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Abastecimiento</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Abastecimiento,
+                                        new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "No tiene" },
+                                             new SelectListItem { Value = "2" , Text = "Servicio / Red público" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Agua recib</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.AguaRecib,
+                                          new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "No recibe agua por tuberia por otros medios" },
+                                             new SelectListItem { Value = "2" , Text = "No tiene" },
+                                             new SelectListItem { Value = "3" , Text = "Por tuberia dentro de la vivienda" },
+                                             new SelectListItem { Value = "4" , Text = "Por tuberia fuera de la vivienda, pero dentro del edificio, lote o terreno" },
+                                             new SelectListItem { Value = "5" , Text = "Por tuberia fuera del edificio, lote o terreno" },
+                                             new SelectListItem { Value = "6" , Text = "Otro" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Alcantarillado</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-menu-alt"></i>
+                                            </span>
+                                        </div>
+                                        @Html.DropDownListFor(model => model.Alcantarillado,
+                                         new List<SelectListItem> {
+                                             new SelectListItem { Value = "" , Text = "-selecionar-" },
+                                             new SelectListItem { Value = "1" , Text = "No tiene" },
+                                             new SelectListItem { Value = "2" , Text = "Pozo Septico" },
+                                             new SelectListItem { Value = "3" , Text = "Servicio / red publico" }
+                                        },
+                                        new { @class= "form-control", @required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Código localización</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.CodigoLocalizacion, new { @class = "form-control footPlace", @placeholder = "Código localización", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        @Html.CheckBoxFor(m => m.TieneMedidor, new { @class = "custom-control-input", @id = "idTieneMedidor" })
+                                        <label class="custom-control-label" for="idTieneMedidor">Tiene medidor</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Usuario quien registro</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.UsuarioRegistro, new { @class = "form-control footPlace", @placeholder = "Usuario quien registro", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Observación</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Observacion, new { @class = "form-control footPlace", @placeholder = "Observación", @required = "required", @autocomplete = "off" })
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="next">
+                        <input class="btn btn-primary" type="button" value="Guardar" id="btnGuardarSubProducto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<script>
+    function limpiarTextos() {
+        $('#CodigoUnico').val("");
+        $('#idCodigoCatastral').val("");
+        $('#ClaveAnterior').val("");
+        $('#NumeroIdentificacion').val("");
+        $('#NombrePropietario').val("");
+        $('#PropietarioAnterior').val("");
+        $('#Direccion').val("");
+        $('#Barrio').val("");
+        $('#NumeroPiso').val("");
+        $('#CodigoLocalizacion').val("");
+        $('#UsuarioRegistro').val("");
+    }
+
+    function ejecutePostCatastro(url, datos) {
+        debugger;
+        esperando.iniciar();
+        const datosLlamada = datos;
+        if (typeof (datosLlamada) === 'object') {
+            datosLlamada.__RequestVerificationToken = $('input[name=__RequestVerificationToken]').val();
+        }
+        $.post(url, datosLlamada, function (response) {
+            $("#panelPrincipal").html(response);
+            limpiarTextos();
+        }).done(function () {
+            esperando.terminar();
+        }).always(function () {
+            esperando.terminar();
+        });
+    }
+
+    $("#btnConsultarCodigo").click(function () {
+        debugger;
+        if ($('#CodigoUnico').val() !== "" && $('#CodigoUnico').val() !== undefined) {
+
+            var formData = {
+                CodigoUnico: $('#CodigoUnico').val(),
+                //CodigoCatastral: $('#idCodigoCatastral').val(),
+            };
+            ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
+        }
+        else {
+            alert("Ingrese código únio");
+        }
+    });
+
+    $("#btnGuardarSubProducto").click(function () {
+        if ($("#frmNuevaFicha").valid()) {
+
+            var formData = {
+                CodigoUnico : $('#CodigoUnico').val(),
+                CodigoCatastral : $('#idCodigoCatastral').val(),
+                ClaveAnterior : $('#ClaveAnterior').val(),
+                TipoIdentificacion: $('#LstTipoIdentificacion option:selected').val(),
+                NumeroIdentificacion : $('#NumeroIdentificacion').val(),
+                NombrePropietario : $('#NombrePropietario').val(),
+                PropietarioAnterior : $('#PropietarioAnterior').val(),
+                Direccion : $('#Direccion').val(),
+                Barrio : $('#Barrio').val(),
+                UsoPredio: $('#LstUsoPredio option:selected').val(),
+                Escritura: $('#LstEscritura option:selected').val(),
+                Ocupacion: $('#LstOcupacion option:selected').val(),
+                Localizacion: $('#LstLocalizacion option:selected').val(),
+                NumeroPiso : $('#NumeroPiso').val(),
+                Abastecimiento: $('#LstAbastecimiento option:selected').val(),
+                AguaRecib: $('#LstAguaRecib option:selected').val(),
+                Alcantarillado: $('#LstAlcantarillado option:selected').val(),
+                CodigoLocalizacion : $('#CodigoLocalizacion').val(),
+                TieneMedidor: $('#idTieneMedidor').prop('checked'),
+                UsuarioRegistro: $('#UsuarioRegistro').val(),
+                TextoTipoIdentificacion: $('#LstTipoIdentificacion option:selected').text(),
+                TextoUsoPredio: $('#LstUsoPredio option:selected').text(),
+                TextoEscritura: $('#LstEscritura option:selected').text(),
+                TextoOcupacion: $('#LstOcupacion option:selected').text(),
+                TextoLocalizacion: $('#LstLocalizacion option:selected').text(),
+                TextoAbastecimiento: $('#LstAbastecimiento option:selected').text(),
+                TextoAguaRecib: $('#LstAguaRecib option:selected').text(),
+                TextoAlcantarillado: $('#LstAlcantarillado option:selected').text(),
+
+            };
+            ejecutePostCatastro('@Url.Action("Guardar", "SubProducto")', formData);
+        }
+    });
+
+</script>

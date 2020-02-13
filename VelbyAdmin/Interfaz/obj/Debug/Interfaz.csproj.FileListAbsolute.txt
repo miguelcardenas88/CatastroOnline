@@ -1,0 +1,29 @@
+C:\Users\punguilj\Documents\AutomaticFootControl\Interfaz\bin\Debug\Interfaz.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Interfaz\bin\Debug\Interfaz.pdb
+C:\Users\punguilj\Documents\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\punguilj\Documents\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.dll
+C:\Users\punguilj\Documents\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.pdb
+D:\Desarrollos\AutomaticFootControl\Interfaz\bin\Debug\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\Interfaz\bin\Debug\Interfaz.pdb
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.dll
+D:\Desarrollos\AutomaticFootControl\Interfaz\obj\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\bin\Debug\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\bin\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Debug\Interfaz.dll
+D:\Proyectos Empresas\Empresa Belleza\Sistema Belleza\Sistemas\VelbyAdmin\Interfaz\obj\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Interfaz.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Comun.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Newtonsoft.Json.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\System.Web.Mvc.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Comun.pdb
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\System.Web.Mvc.xml
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\bin\Debug\es\System.Web.Mvc.resources.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Debug\Interfaz.csprojAssemblyReference.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Debug\Interfaz.csproj.CopyComplete
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Debug\Interfaz.dll
+D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Interfaz\obj\Debug\Interfaz.pdb

@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("Nuevo", "Colaborador", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmListarColaborador" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Lista de Colaboradores</h4>
+        </div>
+    </div>
+
+    @*<div class="next">
+            <input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevoColaborador" />
+        </div>*@
+
+    <div class="table-responsive" style="width:100%; margin:0 auto;">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Editar</th>
+                    <th>Foto</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Identificación</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                    <th>Dirección</th>
+                    <th>Hoja Vida</th>
+                    <th>Récord policial</th>
+                    <th>Entrevista</th>
+                    <th>Descripción Entrevista</th>
+                    <th>Prueba</th>
+                    <th>Descripción Prueba</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!-------------------------------------------------->
+    <!--   Inicio Modal Aceptar Eliminar un registro  -->
+    <!-------------------------------------------------->
+
+    <div class="modal fade" id="IdEliminarRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">BellezApp</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Esta seguro de eliminar el registro</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnEliminar" class="btn btn-secondary Esperando" data-dismiss="modal">Eliminar</button>
+                    <button type="button" id="btnCancelar" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    tr.even {
+        background-color: #F5F5F5 !important;
+    }
+</style>
+
+<script>
+    var idRedistro = "";
+    $(document).ready(function () {
+        @*$("#btnNuevoSubProducto").click(function () {
+            var formData = $('#frmListarSubProducto').serializeArray();
+            ejecutePost('@Url.Action("Nuevo", "SubProducto")', formData);
+        });*@
+
+        @*$("#btnEliminar").click(function () {
+            var data = { idSubServicio: idRedistro};
+            ejecutePost('@Url.Action("Eliminar", "Colaborador")', data);
+        });*@
+
+        //"url": "/AdminBellezApp/Colaborador/ObtenerColaboradores",
+        //"url": "/Colaborador/ObtenerColaboradores",
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/AdminBellezApp/Colaborador/ObtenerColaboradores",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        return '<div class="icon"><i onclick="ObtenerColaborador(' + JsonResultRow.IdColaborador + ')" class="fa fa-pencil-square-o fa-2x " title="Editar"></i></div>';
+                    }
+                },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        return '<div style="width:100px;"> <img height="80" width="80" src="data:image/jpeg;base64,' + JsonResultRow.Foto + '" style="border-width: 10px; visibility: visible;"/> </div>';
+                    }
+                },
+                { "data": "Nombres", "autoWidth": true },
+                { "data": "Apellidos", "autoWidth": true },
+                { "data": "DocumentoIdentidad", "autoWidth": true },
+                { "data": "Celular", "autoWidth": true },
+                { "data": "Correo", "autoWidth": true },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        var estado;
+                        if (JsonResultRow.Estado == 0)
+                            estado = 'Inactivo'
+                        if (JsonResultRow.Estado == 1)
+                            estado = 'Activo'
+                        if (JsonResultRow.Estado == 2)
+                            estado = 'Bloqueado'
+                        return estado;
+                    }
+                },
+                { "data": "DireccionDomicilio", "autoWidth": true },
+                //{ "data": "HojaVida", "autoWidth": true },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        var datoPdf = "'" + JsonResultRow.Hojavida + "'";
+                        var idHoja = "'" + 'idHoja' + "'";
+                        return '<div class="icon">  <a id="idHoja" download="HojaDeVida.pdf" style="display:none;" />  <i onclick="downloadPDF(' + datoPdf + ', '+ idHoja +')"; class="fa fa-file-pdf-o fa-2x " title="Descargar Pdf"></i></div>';
+                    }
+                },
+                //{ "data": "RecordPolicial", "autoWidth": true },
+                {
+                    "render": function (data, type, JsonResultRow, meta) {
+                        var datoPdf = "'" + JsonResultRow.RecordPolicial + "'";
+                        var idRecord = "'" + 'idRecord' + "'";
+                        return '<div class="icon">  <a id="idRecord" download="RecordPolicial.pdf" style="display:none;"/> <i onclick="downloadPDF(' + datoPdf + ', ' + idRecord + ')"; class="fa fa-file-pdf-o fa-2x " title="Descargar Pdf"></i></div>';
+                    }
+                },
+                {
+                    'render': function (data, type, JsonResultRow, meta) {
+                        if (JsonResultRow.Entrevista == true)
+                            return '<div class="custom-control custom-checkbox"> <input disabled="disabled" class="custom-control-input" type="checkbox" checked id="idEntrevista" value="' + JsonResultRow.Entrevista + '"> <label class="custom-control-label" for="idEntrevista"></label> </div>';
+                        else
+                            return '<div class="custom-control custom-checkbox"> <input disabled="disabled" class="custom-control-input" type="checkbox"  id="idEntrevista" value="' + JsonResultRow.Entrevista + '"> <label class="custom-control-label" for="idEntrevista"></label> </div>';
+                    }
+                },
+                { "data": "DescripcionEntrevista", "autoWidth": true },
+                {
+                    'render': function (data, type, JsonResultRow, meta) {
+                        if (JsonResultRow.PruebaTecnica == true) {
+                            return '<div class="custom-control custom-checkbox"> <input disabled="disabled" class="custom-control-input" type="checkbox" checked id="idPrueba" value="' + JsonResultRow.PruebaTecnica + '"> <label class="custom-control-label" for="idPrueba"></label> </div>';
+                        }
+                        else {
+                            return '<div class="custom-control custom-checkbox"> <input disabled="disabled" class="custom-control-input" type="checkbox"  id="idPrueba" value="' + JsonResultRow.PruebaTecnica + '"> <label class="custom-control-label" for="idPrueba"></label> </div>';
+                        }
+                    }
+                },
+                { "data": "DescripcionPrueba", "autoWidth": true },
+            ]
+        });
+    });
+
+    function ObtenerColaborador(idColaborador) {
+        var data = { idColaborador: idColaborador};
+        ejecutePost('@Url.Action("ObtenerColaborador", "Colaborador")', data);
+    }
+
+    function Eliminar(idSubServicio) {
+        idRedistro = idSubServicio;
+        $('#IdEliminarRegistro').modal('show');
+    }
+
+
+    window.downloadPDF = function downloadPDF(Pdf, idSelector) {
+        debugger;
+        var dlnk = document.getElementById(idSelector);
+        dlnk.href = 'data:application/octet-stream;base64,' + Pdf;
+        dlnk.click();
+        alert('Pdf generado correctamente');
+    }
+
+</script>
+

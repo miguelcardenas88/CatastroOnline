@@ -1,0 +1,98 @@
+﻿@model AutomaticFootControl.Models.Empresa.EmpresaModel
+
+@using (Html.BeginForm("GestionEmpresa", "Empresa", FormMethod.Post, new { @class = "", @data_toggle = "validator", @id = "frmGestionEmpresa" }))
+{
+    @Html.HiddenFor(m => m.TipoAccion)
+    @Html.HiddenFor(m => m.IdEmpresa)
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Empresa</h4>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+    if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+    {
+        @Html.Raw(ViewBag.ErrorGenerico);
+    }
+    else
+    {
+
+        <div class="gestionEmpresa" id="tab1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form method="post" id="wizard-stage-1">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NombreEmpresa)
+                                    @Html.ValidationMessageFor(m => m.NombreEmpresa, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NombreEmpresa, new { @class = "form-control footPlace", @placeholder = "Nombre de la empresa" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.DireccionEmpresa)
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.DireccionEmpresa, new { @class = "form-control footPlace", @placeholder = "Dirección de la empresa" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TelefonoEmpresa)
+                                    @Html.ValidationMessageFor(m => m.TelefonoEmpresa, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-headphones"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.TelefonoEmpresa, new { @class = "phone form-control footPlace", @placeholder = "023341831" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EmailEmpresa)
+                                    @Html.ValidationMessageFor(m => m.EmailEmpresa, "", new { @class = "texto-requerido" })
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-mail-incoming"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.EmailEmpresa, new { @class = "form-control footPlace", @placeholder = "Ej: correo@correo.com" })
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="next">
+                        @*<input class="btn btn-primary" type="submit" value="Guardar" id="btnGuardarEmpresa" />*@
+                        <button class="btn btn-primary" onclick="" type="submit"><i class="fa fa-save"></i> Guardar</button>
+                        <button class="btn btn-danger" onclick="" type="button" id="btnListar"><i class="fa fa-list-alt "></i> Listar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<script>
+
+    $("#btnListar").click(function () {
+        var url = "@Url.Action("_ListarEmpresa", "Empresa")";
+        ejecutar.accionControladorLista(url);
+    });
+
+</script>
