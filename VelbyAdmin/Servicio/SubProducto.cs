@@ -36,10 +36,11 @@ namespace Servicio
             return respuesta;
         }
 
+        // Servicio.SubProducto
         public RespuestaComun GuardarFichaCatastro(modFicha oFicha, string accion)
         {
             RespuestaComun respuesta = new RespuestaComun();
-            string subProductosEmail = string.Empty;
+            string arg_0B_0 = string.Empty;
             try
             {
                 Dictionary<string, object> parametros = new Dictionary<string, object>();
@@ -71,23 +72,24 @@ namespace Servicio
                 parametros.Add("CodigoLocalizacion", oFicha.CodigoLocalizacion);
                 parametros.Add("TieneMedidor", oFicha.TieneMedidor);
                 parametros.Add("UsuarioRegistro", oFicha.UsuarioRegistro);
-
-                //string parametroDatoMetodo = Utilitario.SerializarIdentado(datosMetodo);
+                parametros.Add("Observacion", oFicha.Observacion);
                 string storeProcedure = string.Empty;
                 if (accion == "I")
+                {
                     storeProcedure = "spi_ficha_catastro";
+                }
                 else if (accion == "M")
+                {
                     storeProcedure = Enumerador.SpSubServicios.spu_sub_servicio.ObtenerDescripcion();
+                }
                 else if (accion == "E")
+                {
                     storeProcedure = Enumerador.SpSubServicios.spd_sub_servicio.ObtenerDescripcion();
-
-                respuesta = gestionConexiones.EjecutaStoreProcedure(Utilitario.SerializarIdentado(parametros), string.Empty, storeProcedure);
-
+                }
+                respuesta = this.gestionConexiones.EjecutaStoreProcedure(Utilitario.SerializarIdentado(parametros), string.Empty, storeProcedure);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                //respuesta = conexionGestion.AsignarDatosRespuesta(Enumerador.EnumTipoRespuesta.ErrorException, Constantes.RESPUESTA_MENSAJE_ERROR);
-                //UtilitarioLogs.PreparaGuardaLogsBase(ex, Enumerador.EnumTipoRespuesta.ErrorException, datosMetodo);
             }
             return respuesta;
         }

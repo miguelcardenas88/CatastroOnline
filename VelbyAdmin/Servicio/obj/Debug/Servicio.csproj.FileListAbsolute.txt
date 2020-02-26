@@ -243,3 +243,19 @@ D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servi
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CopyComplete
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.dll
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Debug\Servicio.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Servicio.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Servicio.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Interfaz.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\System.Web.Mvc.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Interfaz.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\System.Web.Mvc.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.pdb

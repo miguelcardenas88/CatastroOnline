@@ -175,7 +175,7 @@ namespace Servicio.Conexion
                 }
                 //UtilitarioLogs.PreparaGuardaLogsBase(null, Enumerador.EnumTipoRespuesta.RespuestaOk, Metodo);
             }
-            catch (SqlException sqlex)
+            catch (SqlException)
             {
                 AsignarDatosRespuesta(Enumerador.EnumTipoRespuesta.ErrorSqlException, Constantes.RESPUESTA_MENSAJE_ERROR);
                 //UtilitarioLogs.PreparaGuardaLogsBase(sqlex, Enumerador.EnumTipoRespuesta.RespuestaOk, Metodo);

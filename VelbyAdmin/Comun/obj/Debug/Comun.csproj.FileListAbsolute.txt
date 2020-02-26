@@ -10,3 +10,15 @@ D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Debug\Comun.cs
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Debug\Comun.dll
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Debug\Comun.pdb
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\System.Web.Mvc.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\System.Web.Mvc.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csproj.CopyComplete
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.pdb

@@ -232,3 +232,19 @@ D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Release\Ser
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Release\Servicio.csproj.CopyComplete
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Release\Servicio.dll
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Servicio\obj\Release\Servicio.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Servicio.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Servicio.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Interfaz.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Newtonsoft.Json.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\System.Web.Mvc.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Interfaz.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\Newtonsoft.Json.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\System.Web.Mvc.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Release\es\System.Web.Mvc.resources.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Release\Servicio.csprojAssemblyReference.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Release\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Release\Servicio.csproj.CopyComplete
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Release\Servicio.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Release\Servicio.pdb
