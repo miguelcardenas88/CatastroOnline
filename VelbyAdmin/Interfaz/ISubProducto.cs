@@ -16,5 +16,8 @@ namespace Interfaz
         RespuestaComun GuardarFichaCatastro(modFicha oFicha, string accion);
 
         modFicha ObtenerFichaCatastro(modFicha oFicha, string accion);
+
+        List<modFicha> ListaRegistroCatastro();
+        void PostReportPartial();
     }
 }

@@ -656,3 +656,7 @@ C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootCont
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.csproj.CopyComplete
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.dll
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\obj\Debug\AutomaticFootControl.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\bin\SpreadsheetLight.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\bin\SpreadsheetLight.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\bin\DocumentFormat.OpenXml.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\AutomaticFootControl\bin\DocumentFormat.OpenXml.xml

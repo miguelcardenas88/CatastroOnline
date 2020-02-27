@@ -46,6 +46,10 @@
                                         <input class="btn btn-primary" type="button" value="Consultar" id="btnConsultarCodigo" />
                                         @*<input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevo" />*@
                                     </div>
+                                    <div class="next" style="text-align: center;">
+                                        <input class="btn btn-primary" type="button" value="Ver listado registrados" id="btnListadoRegistroCatastro" />
+                                        @*<input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevo" />*@
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
@@ -423,9 +427,26 @@
             ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
         }
         else {
+            alert("Ingrese código único");
+        }
+    });
+
+
+        $("#btnListadoRegistroCatastro").click(function () {
+        debugger;
+        if ($('#CodigoUnico').val() !== "" && $('#CodigoUnico').val() !== undefined) {
+
+            var formData = {
+                CodigoUnico: $('#CodigoUnico').val(),
+                //CodigoCatastral: $('#idCodigoCatastral').val(),
+            };
+            ejecutePost('@Url.Action("PostReportPartial", "SubProducto")', formData);
+        }
+        else {
             alert("Ingrese código únio");
         }
     });
+
 
     $("#btnGuardarSubProducto").click(function () {
         if ($("#frmNuevaFicha").valid()) {

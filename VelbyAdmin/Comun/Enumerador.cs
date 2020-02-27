@@ -217,6 +217,7 @@ namespace Comun
             ListarHorario,
             GestionProducto,
             GestionSubProducto,
+            ListaRegistroCatastro,
         }
 
         #region Codigos de error y mensajes de error

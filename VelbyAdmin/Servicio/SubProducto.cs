@@ -3,11 +3,14 @@ using Comun.Modelo;
 using Interfaz;
 using Newtonsoft.Json;
 using Servicio.Conexion;
+using SpreadsheetLight;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Servicio
 {
@@ -125,5 +128,140 @@ namespace Servicio
             return oFicha;
         }
 
+
+        public List<modFicha> ListaRegistroCatastro()
+        {
+            string subProductosEmail = string.Empty;
+            List<Dictionary<string, string>> respuesta = new List<Dictionary<string, string>>();
+            List<modFicha> oFicha = null;
+            //string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
+            try
+            {
+
+                string storeProcedure = "sps_fichas_catastro";
+                respuesta = gestionConexiones.EjecutaStoreProcedureConsulta(null, string.Empty, storeProcedure);
+
+                if (respuesta.Count >= 1)
+                {
+                    string respuestaStr = Utilitario.SerializarIdentado(respuesta);
+                    oFicha = Utilitario.Deserializar<List<modFicha>>(respuestaStr);
+
+                    //string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
+                    //SLDocument oSLDocument = new SLDocument();
+
+                    //System.Data.DataTable dt = new System.Data.DataTable();
+
+                    ////columnas
+                    //dt.Columns.Add("CodigoUnico", typeof(string));
+                    //dt.Columns.Add("CodigoCatastral", typeof(string));
+                    //dt.Columns.Add("ClaveAnterior", typeof(string));
+                    //dt.Columns.Add("TipoIdentificacion", typeof(string));
+                    //dt.Columns.Add("TextoTipoIdentificacion", typeof(string));
+                    //dt.Columns.Add("NumeroIdentificacion", typeof(string));
+                    //dt.Columns.Add("NombrePropietario", typeof(string));
+                    //dt.Columns.Add("PropietarioAnterior", typeof(string));
+                    //dt.Columns.Add("Direccion", typeof(string));
+                    //dt.Columns.Add("Barrio", typeof(string));
+                    //dt.Columns.Add("UsoPredio", typeof(string));
+                    //dt.Columns.Add("TextoUsoPredio", typeof(string));
+                    //dt.Columns.Add("Escritura", typeof(string));
+                    //dt.Columns.Add("TextoEscritura", typeof(string));
+                    //dt.Columns.Add("Ocupacion", typeof(string));
+                    //dt.Columns.Add("TextoOcupacion", typeof(string));
+                    //dt.Columns.Add("Localizacion", typeof(string));
+                    //dt.Columns.Add("TextoLocalizacion", typeof(string));
+                    //dt.Columns.Add("NumeroPiso", typeof(string));
+                    //dt.Columns.Add("Abastecimiento", typeof(string));
+                    //dt.Columns.Add("TextoAbastecimiento", typeof(string));
+                    //dt.Columns.Add("AguaRecib", typeof(string));
+                    //dt.Columns.Add("TextoAguaRecib", typeof(string));
+                    //dt.Columns.Add("Alcantarillado", typeof(string));
+                    //dt.Columns.Add("TextoAlcantarillado", typeof(string));
+                    //dt.Columns.Add("CodigoLocalizacion", typeof(string));
+                    //dt.Columns.Add("TieneMedidor", typeof(string));
+                    //dt.Columns.Add("UsuarioRegistro", typeof(string));
+                    //dt.Columns.Add("Observacion", typeof(string));
+                    //int i = 0;
+                    //foreach (modFicha item in oFicha)
+                    //{
+                    //    i++;
+                    //    //registros , rows
+                    //    dt.Rows.Add(
+                    //    item.CodigoUnico
+                    //    , item.CodigoCatastral
+                    //    , item.ClaveAnterior
+                    //    , item.TipoIdentificacion
+                    //    , item.TextoTipoIdentificacion
+                    //    , item.NumeroIdentificacion
+                    //    , item.NombrePropietario
+                    //    , item.PropietarioAnterior
+                    //    , item.Direccion
+                    //    , item.Barrio
+                    //    , item.UsoPredio
+                    //    , item.TextoUsoPredio
+                    //    , item.Escritura
+                    //    , item.TextoEscritura
+                    //    , item.Ocupacion
+                    //    , item.TextoOcupacion
+                    //    , item.Localizacion
+                    //    , item.TextoLocalizacion
+                    //    , item.NumeroPiso
+                    //    , item.Abastecimiento
+                    //    , item.TextoAbastecimiento
+                    //    , item.AguaRecib
+                    //    , item.TextoAguaRecib
+                    //    , item.Alcantarillado
+                    //    , item.TextoAlcantarillado
+                    //    , item.CodigoLocalizacion
+                    //    , item.TieneMedidor
+                    //    , item.UsuarioRegistro
+                    //    , item.Observacion);
+
+                    //}
+
+
+
+                    //oSLDocument.ImportDataTable(1, 1, dt, true);
+
+                    //oSLDocument.SaveAs(pathFile);
+
+                }
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                //respuesta = conexionGestion.AsignarDatosRespuesta(Enumerador.EnumTipoRespuesta.ErrorException, Constantes.RESPUESTA_MENSAJE_ERROR);
+                //UtilitarioLogs.PreparaGuardaLogsBase(ex, Enumerador.EnumTipoRespuesta.ErrorException, datosMetodo);
+            }
+            return oFicha;
+        }
+        public void PostReportPartial()
+        {
+
+            // Validate the Model is correct and contains valid data
+            // Generate your report output based on the model parameters
+            // This can be an Excel, PDF, Word file - whatever you need.
+
+            // As an example lets assume we've generated an EPPlus ExcelPackage
+
+            SLDocument workbook = new SLDocument();
+            // Do something to populate your workbook
+
+            // Generate a new unique identifier against which the file can be stored
+            string handle = Guid.NewGuid().ToString();
+
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                workbook.SaveAs(memoryStream);
+                memoryStream.Position = 0;
+               var temp = memoryStream.ToArray();
+            }
+            //return new JsonResult()
+            //{
+            //    Data = new { FileGuid = handle, FileName = "TestReportOutput.xlsx" }
+            //};
+
+        }
     }
 }

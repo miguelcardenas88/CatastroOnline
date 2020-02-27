@@ -259,3 +259,7 @@ C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debu
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.csproj.CopyComplete
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.dll
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\obj\Debug\Servicio.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\SpreadsheetLight.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\SpreadsheetLight.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Servicio\bin\Debug\DocumentFormat.OpenXml.xml

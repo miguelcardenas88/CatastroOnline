@@ -1,0 +1,124 @@
+﻿@model AutomaticFootControl.Models.Producto.SubProductoModelo
+@using Comun.Modelo
+
+
+@using (Html.BeginForm("GestionSubProducto", "SubProducto", FormMethod.Post, new { @id = "frmNuevaFicha" }))
+{
+    @*@Html.HiddenFor(m => m.IdSubservicio)*@
+    <div class="row">
+        <input class="btn btn-primary" type="button" value="Descargar Reporte" id="btnDescargarReporte" />
+
+        <div class="col-md-8">
+            <h4>Listado de Registros</h4>
+            <table class="table">
+                <tr>
+                    <td>Código único</td>
+                    <td>Código catastral</td>
+                    @*<td>Clave anterior</td>
+                    <td>Tipo identificación</td>
+                    <td>Número identificación</td>*@
+                    <td>Nombre propietario</td>
+                    @*<td>Propietario anterior</td>
+                    <td>Dirección</td>
+                    <td>Barrio</td>
+                    <td>Uso predio</td>
+                    <td>Escritura</td>
+                    <td>Ocupación</td>
+                    <td>Localización</td>
+                    <td>Número de piso</td>
+                    <td>Abastecimiento</td>
+                    <td>Agua recib</td>
+                    <td>Alcantarillado</td>
+                    <td>Código localización</td>
+                    <td>tiene medidor</td>
+                    <td>Observaciones</td>*@
+                    <td></td>
+                </tr>
+               
+                    @foreach (var item in Model.LstRegistrosCatastros)
+                    {
+                        <tr>
+                            <td>@item.CodigoUnico</td>
+
+                            <td>@item.CodigoCatastral</td>
+
+                            @*<td>@item.ClaveAnterior</td>
+
+                            <td>@item.TipoIdentificacion</td>
+
+                            <td>@item.NumeroIdentificacion</td>*@
+
+                            <td>@item.NombrePropietario</td>
+
+                            @*<td>@item.PropietarioAnterior</td>
+
+                            <td>@item.Direccion</td>
+
+                            <td>@item.Barrio</td>
+
+                            <td>@item.UsoPredio</td>
+
+                            <td>@item.Escritura</td>
+
+                            <td>@item.Ocupacion</td>
+
+                            <td>@item.Localizacion</td>
+
+                            <td>@item.NumeroPiso</td>
+
+                            <td>@item.Abastecimiento</td>
+
+                            <td>@item.AguaRecib</td>
+
+                            <td>@item.Alcantarillado</td>
+
+                            <td>@item.CodigoLocalizacion</td>
+
+                            <td>@item.TieneMedidor</td>
+
+                            <td>@item.Observacion</td>*@
+
+
+                            <td>
+                                <button id="btnConsultarCodigo" class="btn btn-xs btn-primary" role="button"><i class="glyphicon glyphicon-credit-card"></i> <span>Ver</span></button>
+                            </td>
+                        </tr>
+                    }
+
+            </table>
+        </div>
+    </div>
+
+}
+
+<script>
+
+    @*$("#btnConsultarCodigo").click(function () {
+    
+            var formData = {
+                CodigoUnico: $('#CodigoUnico').val(),
+                //CodigoCatastral: $('#idCodigoCatastral').val(),
+            };
+            ejecutePost('@Url.Action("ConsultarCatastroListado", "SubProducto")', formData);
+      
+    });*@
+
+      $("#btnDescargarReporte").click(function () {
+ 
+       $.ajax({
+           cache: false,
+            type: 'POST',
+    url: 'SubProducto/PostReportPartial',
+    data: "", 
+    success: function (data) {
+         
+         window.location = 'SubProducto/Download?fileGuid=DescargarArchivo' 
+            + '&filename=TestReportOutput.xlsx' ;
+
+
+    }
+})
+       
+    });
+
+</script>

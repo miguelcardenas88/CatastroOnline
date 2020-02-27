@@ -17,7 +17,6 @@ C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\S
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\Newtonsoft.Json.xml
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\System.Web.Mvc.xml
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Debug\es\System.Web.Mvc.resources.dll
-C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csproj.CopyComplete
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.dll

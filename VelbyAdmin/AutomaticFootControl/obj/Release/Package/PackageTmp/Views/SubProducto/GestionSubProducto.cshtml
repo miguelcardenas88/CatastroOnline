@@ -46,6 +46,10 @@
                                         <input class="btn btn-primary" type="button" value="Consultar" id="btnConsultarCodigo" />
                                         @*<input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevo" />*@
                                     </div>
+                                    <div class="next" style="text-align: center;">
+                                        <input class="btn btn-primary" type="button" value="Ver listado registrados" id="btnListadoRegistroCatastro" />
+                                        @*<input class="btn btn-primary" type="button" value="Nuevo" id="btnNuevo" />*@
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
@@ -90,7 +94,7 @@
                                              new SelectListItem { Value = "3" , Text = "Pasaporte" },
                                              new SelectListItem { Value = "4" , Text = "Otro" }
                                           },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -187,7 +191,7 @@
                                              //new SelectListItem { Value = "20" , Text = "Sin uso" },
                                              //new SelectListItem { Value = "21" , Text = "Otro" }
                                           },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -205,7 +209,7 @@
                                              new SelectListItem { Value = "1" , Text = "Tiene escritura" },
                                              new SelectListItem { Value = "2" , Text = "No tiene escritura" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -224,7 +228,7 @@
                                              new SelectListItem { Value = "2" , Text = "No Edificada" },
                                              new SelectListItem { Value = "3" , Text = "En construcción" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -249,7 +253,7 @@
                                              new SelectListItem { Value = "8" , Text = "Triangulo" },
                                              new SelectListItem { Value = "9" , Text = "Otro" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -279,7 +283,7 @@
                                              new SelectListItem { Value = "1" , Text = "No tiene" },
                                              new SelectListItem { Value = "2" , Text = "Servicio / Red público" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -301,7 +305,7 @@
                                              new SelectListItem { Value = "5" , Text = "Por tuberia fuera del edificio, lote o terreno" },
                                              new SelectListItem { Value = "6" , Text = "Otro" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -320,7 +324,7 @@
                                              new SelectListItem { Value = "2" , Text = "Pozo Septico" },
                                              new SelectListItem { Value = "3" , Text = "Servicio / red publico" }
                                         },
-                                        new { @class= "form-control", @required = "required" })
+                                        new { @class = "form-control", @required = "required" })
                                     </div>
                                 </div>
 
@@ -423,9 +427,26 @@
             ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
         }
         else {
+            alert("Ingrese código único");
+        }
+    });
+
+
+        $("#btnListadoRegistroCatastro").click(function () {
+        debugger;
+        if ($('#CodigoUnico').val() !== "" && $('#CodigoUnico').val() !== undefined) {
+
+            var formData = {
+                CodigoUnico: $('#CodigoUnico').val(),
+                //CodigoCatastral: $('#idCodigoCatastral').val(),
+            };
+            ejecutePost('@Url.Action("PostReportPartial", "SubProducto")', formData);
+        }
+        else {
             alert("Ingrese código únio");
         }
     });
+
 
     $("#btnGuardarSubProducto").click(function () {
         if ($("#frmNuevaFicha").valid()) {
@@ -434,32 +455,32 @@
                 CodigoUnico : $('#CodigoUnico').val(),
                 CodigoCatastral : $('#idCodigoCatastral').val(),
                 ClaveAnterior : $('#ClaveAnterior').val(),
-                TipoIdentificacion: $('#LstTipoIdentificacion option:selected').val(),
+                TipoIdentificacion: $('#TipoIdentificacion option:selected').val(),
                 NumeroIdentificacion : $('#NumeroIdentificacion').val(),
                 NombrePropietario : $('#NombrePropietario').val(),
                 PropietarioAnterior : $('#PropietarioAnterior').val(),
                 Direccion : $('#Direccion').val(),
                 Barrio : $('#Barrio').val(),
-                UsoPredio: $('#LstUsoPredio option:selected').val(),
-                Escritura: $('#LstEscritura option:selected').val(),
-                Ocupacion: $('#LstOcupacion option:selected').val(),
-                Localizacion: $('#LstLocalizacion option:selected').val(),
+                UsoPredio: $('#UsoPredio option:selected').val(),
+                Escritura: $('#Escritura option:selected').val(),
+                Ocupacion: $('#Ocupacion option:selected').val(),
+                Localizacion: $('#Localizacion option:selected').val(),
                 NumeroPiso : $('#NumeroPiso').val(),
-                Abastecimiento: $('#LstAbastecimiento option:selected').val(),
-                AguaRecib: $('#LstAguaRecib option:selected').val(),
-                Alcantarillado: $('#LstAlcantarillado option:selected').val(),
+                Abastecimiento: $('#Abastecimiento option:selected').val(),
+                AguaRecib: $('#AguaRecib option:selected').val(),
+                Alcantarillado: $('#Alcantarillado option:selected').val(),
                 CodigoLocalizacion : $('#CodigoLocalizacion').val(),
                 TieneMedidor: $('#idTieneMedidor').prop('checked'),
                 UsuarioRegistro: $('#UsuarioRegistro').val(),
-                TextoTipoIdentificacion: $('#LstTipoIdentificacion option:selected').text(),
-                TextoUsoPredio: $('#LstUsoPredio option:selected').text(),
-                TextoEscritura: $('#LstEscritura option:selected').text(),
-                TextoOcupacion: $('#LstOcupacion option:selected').text(),
-                TextoLocalizacion: $('#LstLocalizacion option:selected').text(),
-                TextoAbastecimiento: $('#LstAbastecimiento option:selected').text(),
-                TextoAguaRecib: $('#LstAguaRecib option:selected').text(),
-                TextoAlcantarillado: $('#LstAlcantarillado option:selected').text(),
-
+                TextoTipoIdentificacion: $('#TipoIdentificacion option:selected').text(),
+                TextoUsoPredio: $('#UsoPredio option:selected').text(),
+                TextoEscritura: $('#Escritura option:selected').text(),
+                TextoOcupacion: $('#Ocupacion option:selected').text(),
+                TextoLocalizacion: $('#Localizacion option:selected').text(),
+                TextoAbastecimiento: $('#Abastecimiento option:selected').text(),
+                TextoAguaRecib: $('#AguaRecib option:selected').text(),
+                TextoAlcantarillado: $('#Alcantarillado option:selected').text(),
+                Observacion : $('#Observacion').val(),
             };
             ejecutePostCatastro('@Url.Action("Guardar", "SubProducto")', formData);
         }

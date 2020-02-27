@@ -10,3 +10,15 @@ D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.csproj.CopyComplete
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.dll
 D:\Proyectos Empresas\Ministerio Agricultura\VelbyAdmin\Comun\obj\Release\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\Newtonsoft.Json.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\System.Web.Mvc.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\Newtonsoft.Json.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\System.Web.Mvc.xml
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\bin\Release\es\System.Web.Mvc.resources.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Release\Comun.csprojAssemblyReference.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Release\Comun.csproj.CoreCompileInputs.cache
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Release\Comun.csproj.CopyComplete
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Release\Comun.dll
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Release\Comun.pdb

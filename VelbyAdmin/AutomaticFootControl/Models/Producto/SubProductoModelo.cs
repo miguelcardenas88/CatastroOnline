@@ -1,4 +1,5 @@
 ﻿using Comun;
+using Comun.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -51,5 +52,8 @@ namespace AutomaticFootControl.Models.Producto
                 cantidadSeleccionada = value;
             }
         }
+
+        public List<modFicha> LstRegistrosCatastros { get; set; }
+
     }
 }

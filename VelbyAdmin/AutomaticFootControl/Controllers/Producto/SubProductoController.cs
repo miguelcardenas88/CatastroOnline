@@ -1,5 +1,4 @@
 ﻿using AutomaticFootControl.Helpers;
-using AutomaticFootControl.Models;
 using AutomaticFootControl.Models.Producto;
 using AutomaticFootControl.Validadores;
 using Comun;
@@ -7,8 +6,12 @@ using Comun.Modelo;
 using Interfaz;
 using Newtonsoft.Json;
 using Servicio;
+using SpreadsheetLight;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -189,6 +192,133 @@ namespace AutomaticFootControl.Controllers.Producto
             return PartialView(Enumerador.NombreVista.GestionSubProducto.ToString(), oFicha);
         }
 
+        [EncryptedActionParameter]
+        [ValidateAntiForgeryToken]
+        [NoValidarSesionAplication]
+        public async Task<ActionResult> ConsultarCatastroListado(modFicha mFicha)
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+
+            modFicha oFicha = _subProducto.ObtenerFichaCatastro(mFicha, "I");
+            if (oFicha == null)
+            {
+                ViewBag.Mensaje = "Código no encontrado";
+            }
+            else
+            {
+                ViewBag.Mensaje = "Código encontrado";
+            }
+            return View(Enumerador.NombreVista.GestionSubProducto.ToString(), oFicha);
+        }
+
+        [NoValidarSesionAplication]
+        public ActionResult ListaRegistroCatastro()
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+
+            List<modFicha> oFicha = _subProducto.ListaRegistroCatastro();
+            if (oFicha == null)
+            {
+                ViewBag.Mensaje = "No existen registro";
+            }
+            else
+            {
+                //string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
+                SLDocument oSLDocument = new SLDocument();
+
+                System.Data.DataTable dt = new System.Data.DataTable();
+
+                //columnas
+                dt.Columns.Add("CodigoUnico", typeof(string));
+                dt.Columns.Add("CodigoCatastral", typeof(string));
+                dt.Columns.Add("ClaveAnterior", typeof(string));
+                dt.Columns.Add("TipoIdentificacion", typeof(string));
+                dt.Columns.Add("TextoTipoIdentificacion", typeof(string));
+                dt.Columns.Add("NumeroIdentificacion", typeof(string));
+                dt.Columns.Add("NombrePropietario", typeof(string));
+                dt.Columns.Add("PropietarioAnterior", typeof(string));
+                dt.Columns.Add("Direccion", typeof(string));
+                dt.Columns.Add("Barrio", typeof(string));
+                dt.Columns.Add("UsoPredio", typeof(string));
+                dt.Columns.Add("TextoUsoPredio", typeof(string));
+                dt.Columns.Add("Escritura", typeof(string));
+                dt.Columns.Add("TextoEscritura", typeof(string));
+                dt.Columns.Add("Ocupacion", typeof(string));
+                dt.Columns.Add("TextoOcupacion", typeof(string));
+                dt.Columns.Add("Localizacion", typeof(string));
+                dt.Columns.Add("TextoLocalizacion", typeof(string));
+                dt.Columns.Add("NumeroPiso", typeof(string));
+                dt.Columns.Add("Abastecimiento", typeof(string));
+                dt.Columns.Add("TextoAbastecimiento", typeof(string));
+                dt.Columns.Add("AguaRecib", typeof(string));
+                dt.Columns.Add("TextoAguaRecib", typeof(string));
+                dt.Columns.Add("Alcantarillado", typeof(string));
+                dt.Columns.Add("TextoAlcantarillado", typeof(string));
+                dt.Columns.Add("CodigoLocalizacion", typeof(string));
+                dt.Columns.Add("TieneMedidor", typeof(string));
+                dt.Columns.Add("UsuarioRegistro", typeof(string));
+                dt.Columns.Add("Observacion", typeof(string));
+                int i = 0;
+                foreach (modFicha item in oFicha)
+                {
+                    i++;
+                    //registros , rows
+                    dt.Rows.Add(
+                    item.CodigoUnico
+                    , item.CodigoCatastral
+                    , item.ClaveAnterior
+                    , item.TipoIdentificacion
+                    , item.TextoTipoIdentificacion
+                    , item.NumeroIdentificacion
+                    , item.NombrePropietario
+                    , item.PropietarioAnterior
+                    , item.Direccion
+                    , item.Barrio
+                    , item.UsoPredio
+                    , item.TextoUsoPredio
+                    , item.Escritura
+                    , item.TextoEscritura
+                    , item.Ocupacion
+                    , item.TextoOcupacion
+                    , item.Localizacion
+                    , item.TextoLocalizacion
+                    , item.NumeroPiso
+                    , item.Abastecimiento
+                    , item.TextoAbastecimiento
+                    , item.AguaRecib
+                    , item.TextoAguaRecib
+                    , item.Alcantarillado
+                    , item.TextoAlcantarillado
+                    , item.CodigoLocalizacion
+                    , item.TieneMedidor
+                    , item.UsuarioRegistro
+                    , item.Observacion);
+
+                }
+
+
+
+                oSLDocument.ImportDataTable(1, 1, dt, true);
+                string handle = Guid.NewGuid().ToString();
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    oSLDocument.SaveAs(memoryStream);
+                    memoryStream.Position = 0;
+                    TempData["ArchivoExcel"] = memoryStream.ToArray();
+                    //byte[] data = TempData[handle] as byte[];
+                    //return File(data, "application/vnd.ms-Excel", "TestReportOutput.xlsx");
+                }
+                // oSLDocument.SaveAs(pathFile);
+            }
+            SubProductoModelo mRegistroCatastro = new SubProductoModelo();
+            mRegistroCatastro.LstRegistrosCatastros = oFicha;
+            return PartialView(Enumerador.NombreVista.ListaRegistroCatastro.ToString(), mRegistroCatastro);
+        }
         /// <summary>
         /// Accion para validacion de modelo y redireccionamiento al procesamiento de datos o de vuelta al formulario
         /// </summary>
@@ -257,6 +387,129 @@ namespace AutomaticFootControl.Controllers.Producto
             return PartialView("ListarSubProducto", servicioVistaModelo.LstSubProducto);
         }
 
+        [NoValidarSesionAplication]
+        public ActionResult PostReportPartial()
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+            string handle = string.Empty;
+            List <modFicha> oFicha = _subProducto.ListaRegistroCatastro();
+            if (oFicha == null)
+            {
+                ViewBag.Mensaje = "No existen registro";
+            }
+            else
+            {
+                //string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
+                SLDocument oSLDocument = new SLDocument();
 
+                System.Data.DataTable dt = new System.Data.DataTable();
+
+                //columnas
+                dt.Columns.Add("CodigoUnico", typeof(string));
+                dt.Columns.Add("CodigoCatastral", typeof(string));
+                dt.Columns.Add("ClaveAnterior", typeof(string));
+                dt.Columns.Add("TipoIdentificacion", typeof(string));
+                dt.Columns.Add("TextoTipoIdentificacion", typeof(string));
+                dt.Columns.Add("NumeroIdentificacion", typeof(string));
+                dt.Columns.Add("NombrePropietario", typeof(string));
+                dt.Columns.Add("PropietarioAnterior", typeof(string));
+                dt.Columns.Add("Direccion", typeof(string));
+                dt.Columns.Add("Barrio", typeof(string));
+                dt.Columns.Add("UsoPredio", typeof(string));
+                dt.Columns.Add("TextoUsoPredio", typeof(string));
+                dt.Columns.Add("Escritura", typeof(string));
+                dt.Columns.Add("TextoEscritura", typeof(string));
+                dt.Columns.Add("Ocupacion", typeof(string));
+                dt.Columns.Add("TextoOcupacion", typeof(string));
+                dt.Columns.Add("Localizacion", typeof(string));
+                dt.Columns.Add("TextoLocalizacion", typeof(string));
+                dt.Columns.Add("NumeroPiso", typeof(string));
+                dt.Columns.Add("Abastecimiento", typeof(string));
+                dt.Columns.Add("TextoAbastecimiento", typeof(string));
+                dt.Columns.Add("AguaRecib", typeof(string));
+                dt.Columns.Add("TextoAguaRecib", typeof(string));
+                dt.Columns.Add("Alcantarillado", typeof(string));
+                dt.Columns.Add("TextoAlcantarillado", typeof(string));
+                dt.Columns.Add("CodigoLocalizacion", typeof(string));
+                dt.Columns.Add("TieneMedidor", typeof(string));
+                dt.Columns.Add("UsuarioRegistro", typeof(string));
+                dt.Columns.Add("Observacion", typeof(string));
+           
+                foreach (modFicha item in oFicha)
+                {
+                   
+                    //registros , rows
+                    dt.Rows.Add(
+                    item.CodigoUnico
+                    , item.CodigoCatastral
+                    , item.ClaveAnterior
+                    , item.TipoIdentificacion
+                    , item.TextoTipoIdentificacion
+                    , item.NumeroIdentificacion
+                    , item.NombrePropietario
+                    , item.PropietarioAnterior
+                    , item.Direccion
+                    , item.Barrio
+                    , item.UsoPredio
+                    , item.TextoUsoPredio
+                    , item.Escritura
+                    , item.TextoEscritura
+                    , item.Ocupacion
+                    , item.TextoOcupacion
+                    , item.Localizacion
+                    , item.TextoLocalizacion
+                    , item.NumeroPiso
+                    , item.Abastecimiento
+                    , item.TextoAbastecimiento
+                    , item.AguaRecib
+                    , item.TextoAguaRecib
+                    , item.Alcantarillado
+                    , item.TextoAlcantarillado
+                    , item.CodigoLocalizacion
+                    , item.TieneMedidor
+                    , item.UsuarioRegistro
+                    , item.Observacion);
+                  
+                }
+
+
+
+                oSLDocument.ImportDataTable(1, 1, dt, true);
+                handle = Guid.NewGuid().ToString();
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    oSLDocument.SaveAs(memoryStream);
+                    memoryStream.Position = 0;
+                    TempData["DescargarArchivo"] = memoryStream.ToArray();
+                    //byte[] data = TempData[handle] as byte[];
+                    //return File(data, "application/vnd.ms-Excel", "TestReportOutput.xlsx");
+                }
+                // oSLDocument.SaveAs(pathFile);
+              
+            }
+            return new JsonResult()
+            {
+                Data = new { FileGuid = handle, FileName = "TestReportOutput.xlsx" }
+            };
+        }
+
+        [NoValidarSesionAplication]
+        public virtual ActionResult Download(string fileGuid, string fileName)
+        {
+            if (TempData[fileGuid] != null)
+            {
+                byte[] data = TempData[fileGuid] as byte[];
+                return File(data, "application/vnd.ms-Excel", fileName);
+            }
+            else
+            {
+                // Problem - Log the error, generate a blank file,
+                //           redirect to another controller action - whatever fits with your application
+                return new EmptyResult();
+            }
+        }
     }
 }
