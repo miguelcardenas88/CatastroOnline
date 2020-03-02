@@ -1,0 +1,72 @@
+﻿@model Comun.Modelo.FichaCatastroModel
+@using Comun.Modelo
+
+
+@using (Html.BeginForm("GestionSubProducto", "SubProducto", FormMethod.Post, new { @id = "frmNuevaFicha" }))
+{
+    <input class="btn btn-primary" type="button" value="Descargar Reporte" id="btnDescargarReporte" />
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <h4>Listado de Registros</h4>
+            <table class="table">
+                <tr>
+                    <td>Código catastral</td>
+                    <td>Nombre propietario</td>
+                    <td></td>
+                </tr>
+
+                @foreach (var item in Model.LstRegistrosCatastros)
+                {
+                    <tr>
+                        <td>@item.CodigoCatastral</td>
+                        <td>@item.NombrePropietario</td>
+                        <td>
+                            <input data-bind="@item.CodigoCatastral" class="btn btn-primary" type="button" value="Ver" id="@item.CodigoCatastral" onclick='fnValoresDetalle(this)' />
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+}
+
+
+<script>
+
+      $("#btnConsultarCodigoVer").click(function () {
+
+
+        console.log("CodigoUnico:"+$(this).attr('data-bind'),);
+            var formData = {
+                CodigoCatastral: $(this).attr('data-bind'),
+        };
+        ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
+
+    });
+
+      $("#btnDescargarReporte").click(function () {
+
+       $.ajax({
+           cache: false,
+            type: 'POST',
+    url: 'SubProducto/PostReportPartialCatastro',
+    data: "",
+    success: function (data) {
+
+         window.location = 'SubProducto/DownloadReporteSinat?fileGuid=DescargarArchivo'
+            + '&filename=REporteSinat.xlsx' ;
+
+
+    }
+})
+
+    });
+function fnValoresDetalle(obj) {
+               var formData = {
+                CodigoCatastral: $(obj).attr('data-bind'),
+            };
+            ejecutePost('@Url.Action("ConsultarRegistroCatastro", "SubProducto")', formData);
+        };
+</script>

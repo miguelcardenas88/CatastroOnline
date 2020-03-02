@@ -1,4 +1,5 @@
-﻿@model AutomaticFootControl.Models.Producto.SubProductoModelo
+﻿@model Comun.Modelo.modFicha
+
 @using Comun.Modelo
 
 
@@ -15,42 +16,42 @@
                     <td>Código único</td>
                     <td>Código catastral</td>
                     @*<td>Clave anterior</td>
-                    <td>Tipo identificación</td>
-                    <td>Número identificación</td>*@
+                        <td>Tipo identificación</td>
+                        <td>Número identificación</td>*@
                     <td>Nombre propietario</td>
                     @*<td>Propietario anterior</td>
-                    <td>Dirección</td>
-                    <td>Barrio</td>
-                    <td>Uso predio</td>
-                    <td>Escritura</td>
-                    <td>Ocupación</td>
-                    <td>Localización</td>
-                    <td>Número de piso</td>
-                    <td>Abastecimiento</td>
-                    <td>Agua recib</td>
-                    <td>Alcantarillado</td>
-                    <td>Código localización</td>
-                    <td>tiene medidor</td>
-                    <td>Observaciones</td>*@
+                        <td>Dirección</td>
+                        <td>Barrio</td>
+                        <td>Uso predio</td>
+                        <td>Escritura</td>
+                        <td>Ocupación</td>
+                        <td>Localización</td>
+                        <td>Número de piso</td>
+                        <td>Abastecimiento</td>
+                        <td>Agua recib</td>
+                        <td>Alcantarillado</td>
+                        <td>Código localización</td>
+                        <td>tiene medidor</td>
+                        <td>Observaciones</td>*@
                     <td></td>
                 </tr>
-               
-                    @foreach (var item in Model.LstRegistrosCatastros)
-                    {
-                        <tr>
-                            <td>@item.CodigoUnico</td>
 
-                            <td>@item.CodigoCatastral</td>
+                @foreach (var item in Model.LstRegistrosCatastros)
+                {
+                    <tr>
+                        <td>@item.CodigoUnico</td>
 
-                            @*<td>@item.ClaveAnterior</td>
+                        <td>@item.CodigoCatastral</td>
+
+                        @*<td>@item.ClaveAnterior</td>
 
                             <td>@item.TipoIdentificacion</td>
 
                             <td>@item.NumeroIdentificacion</td>*@
 
-                            <td>@item.NombrePropietario</td>
+                        <td>@item.NombrePropietario</td>
 
-                            @*<td>@item.PropietarioAnterior</td>
+                        @*<td>@item.PropietarioAnterior</td>
 
                             <td>@item.Direccion</td>
 
@@ -79,11 +80,11 @@
                             <td>@item.Observacion</td>*@
 
 
-                            <td>
-                                <button id="btnConsultarCodigo" class="btn btn-xs btn-primary" role="button"><i class="glyphicon glyphicon-credit-card"></i> <span>Ver</span></button>
-                            </td>
-                        </tr>
-                    }
+                        <td>
+                            <button data-bind="@item.CodigoUnico" id="btnConsultarCodigo" class="btn btn-xs btn-primary" role="button"><i class="glyphicon glyphicon-credit-card"></i> <span>Ver</span></button>
+                        </td>
+                    </tr>
+                }
 
             </table>
         </div>
@@ -93,32 +94,33 @@
 
 <script>
 
-    @*$("#btnConsultarCodigo").click(function () {
-    
+    $("#btnConsultarCodigo").click(function () {
+
+
+        console.log("CodigoUnico:"+$(this).attr('data-bind'),);
             var formData = {
-                CodigoUnico: $('#CodigoUnico').val(),
-                //CodigoCatastral: $('#idCodigoCatastral').val(),
-            };
-            ejecutePost('@Url.Action("ConsultarCatastroListado", "SubProducto")', formData);
-      
-    });*@
+                CodigoCatastral: $(this).attr('data-bind'),
+        };
+        ejecutePost('@Url.Action("Nuevo", "SubProducto")', formData);
+
+    });
 
       $("#btnDescargarReporte").click(function () {
- 
+
        $.ajax({
            cache: false,
             type: 'POST',
     url: 'SubProducto/PostReportPartial',
-    data: "", 
+    data: "",
     success: function (data) {
-         
-         window.location = 'SubProducto/Download?fileGuid=DescargarArchivo' 
+
+         window.location = 'SubProducto/Download?fileGuid=DescargarArchivo'
             + '&filename=TestReportOutput.xlsx' ;
 
 
     }
 })
-       
+
     });
 
 </script>

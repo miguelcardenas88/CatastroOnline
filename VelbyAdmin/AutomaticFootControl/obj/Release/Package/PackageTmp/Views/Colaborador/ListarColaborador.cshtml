@@ -168,7 +168,6 @@
 
 
     window.downloadPDF = function downloadPDF(Pdf, idSelector) {
-        debugger;
         var dlnk = document.getElementById(idSelector);
         dlnk.href = 'data:application/octet-stream;base64,' + Pdf;
         dlnk.click();

@@ -19,5 +19,11 @@ namespace Interfaz
 
         List<modFicha> ListaRegistroCatastro();
         void PostReportPartial();
+
+        FichaCatastroModel ConsultarFichaCatastro(FichaCatastroModel oFicha, string accion);
+
+        RespuestaComun RegistrarFichaCatastro(FichaCatastroModel oFicha, string accion);
+        List<FichaCatastroModel> ListadoRegistroCatastro();
+
     }
 }

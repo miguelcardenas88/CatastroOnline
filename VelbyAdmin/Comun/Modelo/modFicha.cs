@@ -46,5 +46,8 @@ namespace Comun.Modelo
         public bool TieneMedidor { get; set; }
         public string UsuarioRegistro { get; set; }
         public string Observacion { get; set; }
+        public List<modFicha> LstRegistrosCatastros { get; set; }
+        public string consultaDesdeListado { get; set; }
+
     }
 }

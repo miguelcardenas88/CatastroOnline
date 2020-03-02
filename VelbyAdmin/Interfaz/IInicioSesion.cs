@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Comun.Modelo;
 using System.Threading.Tasks;
 
 namespace Interfaz
@@ -11,5 +8,7 @@ namespace Interfaz
         T ValidarInicioSesion<T>(object objeto);
 
         Task<T> ValidarInicioSesionAsync<T>(object objeto);
+
+        RespuestaComun CrearUsuario(UsuarioModelo oDatosUsuario, string accion);
     }
 }

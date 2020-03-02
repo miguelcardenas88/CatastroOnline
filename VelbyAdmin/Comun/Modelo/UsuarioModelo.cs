@@ -1,15 +1,14 @@
-﻿using AutomaticFootControl.Models.Pantalla;
+﻿
 using System;
 
 
-namespace AutomaticFootControl.Models.Usuario
+namespace Comun.Modelo
 {
     public class UsuarioModelo
     {
         public UsuarioModelo()
         {
         }
-        public PantallaModelo Pantalla { get; set; }
 
         public int IdCliente { get; set; }
 

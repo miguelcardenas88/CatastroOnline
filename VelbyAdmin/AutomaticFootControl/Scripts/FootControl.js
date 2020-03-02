@@ -1,8 +1,7 @@
 ﻿
 
 function ejecutePost(url, datos) {
-    debugger;
-    esperando.iniciar();
+     esperando.iniciar();
     const datosLlamada = datos;
     if (typeof (datosLlamada) === 'object') {
         datosLlamada.__RequestVerificationToken = $('input[name=__RequestVerificationToken]').val();
@@ -53,7 +52,6 @@ var ejecutar = {
 
         //var form = $('#__AjaxAntiForgeryForm');
         var token = $('input[name="__RequestVerificationToken"]').val();
-        debugger;
         $.ajax({
             url: url,
             type: 'POST',

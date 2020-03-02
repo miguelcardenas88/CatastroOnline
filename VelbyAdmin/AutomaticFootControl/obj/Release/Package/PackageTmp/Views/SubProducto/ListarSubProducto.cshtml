@@ -111,7 +111,6 @@
                 { "data": "IdServicio", "autoWidth": true },
                 {
                     "render": function (data, type, JsonResultRow, meta) {
-                        debugger;
                         var nowDate = new Date(JsonResultRow.TiempoDuracionServicio);
 
                         return '<div style="width:100px;">' + nowDate.format("HH:MM:ss") + '</div>';

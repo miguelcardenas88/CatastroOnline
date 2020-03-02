@@ -89,60 +89,10 @@ namespace AutomaticFootControl.Controllers.Producto
         public ActionResult Nuevo(modFicha mFicha)
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
-            //RespuestaComun respuesta;
-            //vmoServicio servicioVistaModelo = new vmoServicio();
-            //if (!string.IsNullOrEmpty(mSubProducto.CostoTemporal))
-            //    mSubProducto.Costo = decimal.Parse(mSubProducto.CostoTemporal.Replace('.', ','));
-
-            //if (!string.IsNullOrEmpty(mSubProducto.CostoTemporal) && !string.IsNullOrEmpty(mSubProducto.Descripcion)
-            //    && !string.IsNullOrEmpty(mSubProducto.Nombre) && mSubProducto.TiempoDuracionServicio != null)
-            ////&& !string.IsNullOrEmpty(mSubProducto.StrImagen))
-            //{
-            //    if (!string.IsNullOrEmpty(mSubProducto.StrImagen))
-            //    {
-            //        mSubProducto.StrImagen = UtilitarioFront.RedimencionarImagen(mSubProducto.StrImagen, 768);
-            //    }
-
-
-            //    respuesta = await _subProducto.ProcesarGestionSubProducto<RespuestaComun>(mSubProducto);
-            //    if (respuesta.Codigo == Constantes.RESPUESTA_CODIGO_OK)
-            //    {
-            //        servicioVistaModelo = await this.ObtenerListaSubProductoBase(null);
-            //        return PartialView("ListarSubProducto", servicioVistaModelo.LstSubProducto);
-            //    }
-            //    else
-            //    {
-            //        //string strError = string.Format(Constantes.HTML_ERROR_GENERICO, respuesta.Codigo, respuesta.Mensaje, "Lo sentimos, por favor comunicate con SmartCode Solutions", "1800 000 000");
-            //        ErrorModelo errorModelo = new ErrorModelo();
-            //        string strError = respuesta.Mensaje + "|" + respuesta.Codigo;
-            //        return RedirectToAction("Error", "Error", new { @error = strError });
-            //    }
-            //}
-
-
-            //if (Session["ListaProductos"] == null)
-            //{
-            //    IProducto _producto = new Servicio.Producto();
-            //    ProductoModelo mProducto = new ProductoModelo { Estado = "A" };
-            //    servicioVistaModelo = await _producto.ObtenerListaProductoAsync<vmoServicio>(mProducto);
-            //    Session["ListaProductos"] = servicioVistaModelo.LstProducto;
-            //}
-            //else
-            //{
-            //    servicioVistaModelo.LstProducto = (ObservableCollection<ProductoModelo>)Session["ListaProductos"];
-            //}
-
-            //List<SelectListItem> lstServicios = servicioVistaModelo.LstProducto.Select(elemento => new SelectListItem
-            //{
-            //    Text = string.Format("{0} - {1} ", elemento.Descripcion, elemento.Genero == "M" ? "Mujer" : "Hombre"),
-            //    Value = elemento.IdServicios.ToString()
-            //}).ToList();
-
-            //mSubProducto.TipoAccion = Constantes.ACCION_INSERTAR;
-            //mSubProducto.LstServicios = lstServicios;
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");          
             return PartialView(Enumerador.NombreVista.GestionSubProducto.ToString(), mFicha);
         }
+
 
         [EncryptedActionParameter]
         [ValidateAntiForgeryToken]
@@ -192,29 +142,8 @@ namespace AutomaticFootControl.Controllers.Producto
             return PartialView(Enumerador.NombreVista.GestionSubProducto.ToString(), oFicha);
         }
 
-        [EncryptedActionParameter]
-        [ValidateAntiForgeryToken]
         [NoValidarSesionAplication]
-        public async Task<ActionResult> ConsultarCatastroListado(modFicha mFicha)
-        {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
-            RespuestaComun respuesta = new RespuestaComun();
-
-            modFicha oFicha = _subProducto.ObtenerFichaCatastro(mFicha, "I");
-            if (oFicha == null)
-            {
-                ViewBag.Mensaje = "Código no encontrado";
-            }
-            else
-            {
-                ViewBag.Mensaje = "Código encontrado";
-            }
-            return View(Enumerador.NombreVista.GestionSubProducto.ToString(), oFicha);
-        }
-
-        [NoValidarSesionAplication]
-        public ActionResult ListaRegistroCatastro()
+        public async Task<ActionResult> ListaRegistroCatastro()
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
@@ -315,9 +244,10 @@ namespace AutomaticFootControl.Controllers.Producto
                 }
                 // oSLDocument.SaveAs(pathFile);
             }
-            SubProductoModelo mRegistroCatastro = new SubProductoModelo();
+            modFicha mRegistroCatastro = new modFicha();
             mRegistroCatastro.LstRegistrosCatastros = oFicha;
-            return PartialView(Enumerador.NombreVista.ListaRegistroCatastro.ToString(), mRegistroCatastro);
+            mRegistroCatastro.consultaDesdeListado = "Y";
+            return PartialView(Enumerador.NombreVista.GestionSubProducto.ToString(), mRegistroCatastro);
         }
         /// <summary>
         /// Accion para validacion de modelo y redireccionamiento al procesamiento de datos o de vuelta al formulario
@@ -498,6 +428,247 @@ namespace AutomaticFootControl.Controllers.Producto
 
         [NoValidarSesionAplication]
         public virtual ActionResult Download(string fileGuid, string fileName)
+        {
+            if (TempData[fileGuid] != null)
+            {
+                byte[] data = TempData[fileGuid] as byte[];
+                return File(data, "application/vnd.ms-Excel", fileName);
+            }
+            else
+            {
+                // Problem - Log the error, generate a blank file,
+                //           redirect to another controller action - whatever fits with your application
+                return new EmptyResult();
+            }
+        }
+
+
+        /// <summary>
+        /// Accion para validacion de modelo y redireccionamiento al procesamiento de datos o de vuelta al formulario
+        /// </summary>
+        /// <param name="mSubProducto"></param>
+        /// <returns></returns>
+        //[EncryptedActionParameter]
+        //[ValidateAntiForgeryToken]
+        [NoValidarSesionAplication]
+        public ActionResult RegistroCatastro(FichaCatastroModel mFicha)
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            return PartialView(Enumerador.NombreVista.RegistroCatastro.ToString(), mFicha);
+        }
+
+        [EncryptedActionParameter]
+        [ValidateAntiForgeryToken]
+        [NoValidarSesionAplication]
+        public async Task<ActionResult> ConsultarRegistroCatastro(FichaCatastroModel mFicha)
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+
+            FichaCatastroModel oFicha = _subProducto.ConsultarFichaCatastro(mFicha, "I");
+            if (oFicha != null)
+            {
+                ViewBag.Mensaje = "Registro Encontrado";
+            }
+            else
+            {
+                ViewBag.Mensaje = "Registro no encontrado";
+            }
+            return PartialView(Enumerador.NombreVista.RegistroCatastro.ToString(), oFicha);
+        }
+
+        [EncryptedActionParameter]
+        [ValidateAntiForgeryToken]
+        [NoValidarSesionAplication]
+        public async Task<ActionResult> RegistarFicha(FichaCatastroModel mFicha)
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta;
+            vmoServicio servicioVistaModelo = new vmoServicio();
+
+
+            respuesta = _subProducto.RegistrarFichaCatastro(mFicha, "I");
+            if (respuesta.Codigo == Constantes.RESPUESTA_CODIGO_OK)
+            {
+                ViewBag.Mensaje = "Ficha guardada correctamente";
+            }
+            else
+            {
+                ViewBag.Mensaje = "Error al guardar la ficha";
+            }
+            return PartialView(Enumerador.NombreVista.RegistroCatastro.ToString(), new FichaCatastroModel());
+        }
+
+        [NoValidarSesionAplication]
+        public async Task<ActionResult> ListadoRegistroCatastro()
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+
+            List<FichaCatastroModel> oFicha = _subProducto.ListadoRegistroCatastro();
+            if (oFicha == null)
+            {
+                ViewBag.Mensaje = "No existen registro";
+            }
+            else
+            {
+                SLDocument oSLDocument = new SLDocument();
+
+                System.Data.DataTable dt = new System.Data.DataTable();
+
+                //columnas
+                dt.Columns.Add("CodigoCatastral", typeof(string));
+                dt.Columns.Add("ClaveAnterior", typeof(string));
+                dt.Columns.Add("TipoIdentificacion", typeof(string));
+                dt.Columns.Add("TextoTipoIdentificacion", typeof(string));
+                dt.Columns.Add("NumeroIdentificacion", typeof(string));
+                dt.Columns.Add("NombrePropietario", typeof(string));
+
+                int i = 0;
+                foreach (FichaCatastroModel item in oFicha)
+                {
+                    i++;
+                    dt.Rows.Add(
+                     item.CodigoCatastral
+                    , item.ClaveAnterior
+                    , item.NumeroIdentificacion
+                    , item.NombrePropietario
+                    , item.PropietarioAnterior
+                    , item.Direccion
+);                }
+
+
+
+                oSLDocument.ImportDataTable(1, 1, dt, true);
+                string handle = Guid.NewGuid().ToString();
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    oSLDocument.SaveAs(memoryStream);
+                    memoryStream.Position = 0;
+                    TempData["ArchivoExcel"] = memoryStream.ToArray();
+                }
+            }
+            FichaCatastroModel mRegistroCatastro = new FichaCatastroModel();
+            mRegistroCatastro.LstRegistrosCatastros = oFicha;
+            return PartialView(Enumerador.NombreVista.ListadoRegistroCatastro.ToString(), mRegistroCatastro);
+        }
+
+        [NoValidarSesionAplication]
+        public ActionResult PostReportPartialCatastro()
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-EC");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-EC");
+            RespuestaComun respuesta = new RespuestaComun();
+            string handle = string.Empty;
+            List<FichaCatastroModel> oFicha = _subProducto.ListadoRegistroCatastro();
+            if (oFicha == null)
+            {
+                ViewBag.Mensaje = "No existen registro";
+            }
+            else
+            {
+                SLDocument oSLDocument = new SLDocument();
+                System.Data.DataTable dt = new System.Data.DataTable();
+
+                //columnas
+                dt.Columns.Add("AÑO EMISION", typeof(string));
+                dt.Columns.Add("PARROQUIA", typeof(string));
+                dt.Columns.Add("FECHA REGISTRO", typeof(string));
+                dt.Columns.Add("FECHA EMISION", typeof(string));
+                dt.Columns.Add("FECHA VENCIMIENTO", typeof(string));
+                dt.Columns.Add("REFERENCIA", typeof(string));
+                dt.Columns.Add("PROPIETARIO POSEEDOR", typeof(string));
+                dt.Columns.Add("CI RUC", typeof(string));
+                dt.Columns.Add("TITULO", typeof(string));
+                dt.Columns.Add("ORIGEN", typeof(string));
+                dt.Columns.Add("ESTADO ACTUAL DE LA CUENTA", typeof(string));
+                dt.Columns.Add("FECHA BAJ MOD PAG", typeof(string));
+                dt.Columns.Add("TOTAL RUBROS INICIAL", typeof(string));
+                dt.Columns.Add("TOTAL RUBROS ACTUAL", typeof(string));
+                dt.Columns.Add("DIFERENCIAS", typeof(string));
+                dt.Columns.Add("PRIMERA EMISION", typeof(string));
+                dt.Columns.Add("CLAVE ANTERIOR", typeof(string));
+                dt.Columns.Add("PROPIETARIO ANTERIOR", typeof(string));
+                dt.Columns.Add("DIRECCIÓN", typeof(string));
+                dt.Columns.Add("SECTOR", typeof(string));
+                dt.Columns.Add("CATEGORIA", typeof(string));
+                dt.Columns.Add("MES CONSUMO", typeof(string));
+                dt.Columns.Add("NÚMERO MEDIDOR", typeof(string));
+                dt.Columns.Add("METROS CUBICOS", typeof(string));
+                dt.Columns.Add("RANGO", typeof(string));
+                dt.Columns.Add("OBSERVACIÓN", typeof(string));
+                dt.Columns.Add("PORCENTAJE DEDUCCIÓN", typeof(string));
+                dt.Columns.Add("CONSUMO DE AGUA POTABLE", typeof(string));
+                dt.Columns.Add("RECOLECCION DE BASURA", typeof(string));
+                dt.Columns.Add("TASA DE SERVICIO ADMINISTRATIVO", typeof(string));
+                dt.Columns.Add("TOTAL RUBROS ACTUAL1", typeof(string));
+
+                foreach (FichaCatastroModel item in oFicha)
+                {
+
+                    //registros , rows
+                    dt.Rows.Add(
+                    "2020" // Año Emision
+                    , item.Parroquia
+                    , DateTime.Now //fecha registro
+                    , item.FechaEmision
+                    , item.FechaVencimieto
+                    , "Referencia" // Referencia
+                    , item.NombrePropietario
+                    , item.NumeroIdentificacion
+                    , "TITULO" // titulo
+                    , "ARCHIVO" // origen 
+                    , "PEN" // Estado Actual de la cuenta 
+                    , "" // fecha baj mod pag.
+                    , "3.4" // total rubros inicial
+                    , "3.4" // total rubros actual
+                    , "" // diferencias
+                    , "f" // primera emision
+                    , item.ClaveAnterior
+                    , item.PropietarioAnterior
+                    , item.Direccion
+                    , item.Sector
+                    , item.Categoria
+                    , "MARZO" // mes consumo 
+                    , item.NumeroMedidor
+                    , item.MetrosCubicoConsumo
+                    , item.Rango
+                    , item.Observaciones
+                    , item.Deducciones
+                    , "2"// consumo de agua potable
+                    , "1"// recoleccion de basura
+                    , "0.4" // tasa de servicio administrativo
+                    ,"3.4" //tptal rubors actual
+                    );
+                }
+
+                oSLDocument.ImportDataTable(1, 1, dt, true);
+                handle = Guid.NewGuid().ToString();
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    oSLDocument.SaveAs(memoryStream);
+                    memoryStream.Position = 0;
+                    TempData["DescargarArchivo"] = memoryStream.ToArray();
+                    //byte[] data = TempData[handle] as byte[];
+                    //return File(data, "application/vnd.ms-Excel", "TestReportOutput.xlsx");
+                }
+                // oSLDocument.SaveAs(pathFile);
+
+            }
+            return new JsonResult()
+            {
+                Data = new { FileGuid = handle, FileName = "ReporteSinat.xlsx" }
+            };
+        }
+
+        [NoValidarSesionAplication]
+        public virtual ActionResult DownloadReporteSinat(string fileGuid, string fileName)
         {
             if (TempData[fileGuid] != null)
             {

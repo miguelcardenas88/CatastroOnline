@@ -1,0 +1,91 @@
+﻿@model Comun.Modelo.UsuarioModelo
+@using Comun.Modelo
+@{
+    ViewBag.Title = "Registro Usuario";
+    Layout = "~/Views/Shared/_LayoutInicioSesion.cshtml";
+}
+
+@using (Html.BeginForm("RegistrarUsuario", "InicioSesion", FormMethod.Post, new { @class = "Form", Id = "idFormulario" }))
+{
+    <h1 class="Form-title">
+        <center>Registro Usuario</center>
+    </h1>
+    
+
+    <div class="Form-fields">
+        @Html.AntiForgeryToken()
+        @if (ViewBag.Mensaje != null)
+        {
+            <div style="text-align: center; color: blue;">
+                <h4>
+                    <label style="color: blue;">@ViewBag.Mensaje</label>
+                </h4>
+            </div>
+        }
+        <div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Nombres, new { @class = "form-control", @name = "Nombres", @placeholder = "Nombres", @maxlength = 30, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", @name = "Apellidos", @placeholder = "Apellidos", @maxlength = 30, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>
+
+        <div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Correo, new { @class = "form-control", @name = "Correo", @placeholder = "Correo", @maxlength = 30, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>
+
+        @*<div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Usuario, new { @class = "form-control", @name = "Usuario", @placeholder = "Usuario", @maxlength = 30, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>*@
+
+
+        <div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Contrasenia, new { @type = "password", @class = "form-control", @name = "Contraseña", @placeholder = "Contraseña", @maxlength = 15, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>
+
+
+        <div class="form-group has-feedback has-clear">
+            <label class="sr-only">Usuario1</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.ConfirmarContrasenia, new { @type = "password", @class = "form-control", @name = "ConfirmarContraseña", @placeholder = "Confirmar Contraseña", @maxlength = 15, @autofocus = true, @autocomplete = "off", @required = "required" })
+            </div>
+        </div>
+
+
+        <div>
+
+
+            <button id="btnIngresar" class="btn btn-lg btn-dark btn-block" type="submit">Registrar</button>
+        </div>
+        @*@if (Model != null && Model.Pantalla != null && !string.IsNullOrEmpty(Model.Pantalla.MensajeInformativo))
+        {
+            <div class="form-group has-feedback has-clear">
+                <center>
+                    <label style="color:red;">@Model.Pantalla.MensajeInformativo</label>
+                </center>
+            </div>
+        }*@
+    </div>
+}
+

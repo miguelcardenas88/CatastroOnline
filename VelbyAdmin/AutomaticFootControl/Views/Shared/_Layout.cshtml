@@ -33,16 +33,23 @@
                             <h6 class="nav-header">Agua Potable</h6>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("Nuevo", "SubProducto")', 'SubProducto');">
+                            <a class="nav-link" href="javascript:var formData = {consultaDesdeListado:'L',}; ejecutePost('@Url.Action("RegistroCatastro", "SubProducto")', 'formData');">
                                 <i class="fa fa-list-alt"></i>
-                                Nuevo Registro <span class="sr-only">(current)</span>
+                                Registro Catastral<span class="sr-only">(current)</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListaRegistroCatastro", "SubProducto")', 'SubProducto');">
+                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListadoRegistroCatastro", "SubProducto")', 'SubProducto');">
                                 <i class="fa fa-list-alt"></i>
                                 Listado Registros<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("RegistroUsuarios", "InicioSesion")', 'SubProducto');">
+                                <i class="fa fa-list-alt"></i>
+                                Creación de Usuarios<span class="sr-only">(current)</span>
                             </a>
                         </li>
 

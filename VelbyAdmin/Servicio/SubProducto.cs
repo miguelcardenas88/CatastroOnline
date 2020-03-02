@@ -263,5 +263,113 @@ namespace Servicio
             //};
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="oFicha"></param>
+        /// <param name="accion"></param>
+        /// <returns></returns>
+        public FichaCatastroModel ConsultarFichaCatastro(FichaCatastroModel oFicha, string accion)
+        {
+            string subProductosEmail = string.Empty;
+            List<Dictionary<string, string>> respuesta = new List<Dictionary<string, string>>();
+            try
+            {
+                Dictionary<string, object> parametros = new Dictionary<string, object>
+                {
+                    { "CodigoCatastral", oFicha.CodigoCatastral }
+                };
+
+                string storeProcedure = "sps_ficha_catastro_x_codigo_catastro";
+                respuesta = gestionConexiones.EjecutaStoreProcedureConsulta(Utilitario.SerializarIdentado(parametros), string.Empty, storeProcedure);
+                if (respuesta.Count >= 1)
+                {
+                    string respuestaStr = Utilitario.SerializarIdentado(respuesta[0]);
+                    oFicha = Utilitario.Deserializar<FichaCatastroModel>(respuestaStr);
+                }
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                //respuesta = conexionGestion.AsignarDatosRespuesta(Enumerador.EnumTipoRespuesta.ErrorException, Constantes.RESPUESTA_MENSAJE_ERROR);
+                //UtilitarioLogs.PreparaGuardaLogsBase(ex, Enumerador.EnumTipoRespuesta.ErrorException, datosMetodo);
+            }
+            return oFicha;
+        }
+
+        public RespuestaComun RegistrarFichaCatastro(FichaCatastroModel oFicha, string accion)
+        {
+            RespuestaComun respuesta = new RespuestaComun();
+            string arg_0B_0 = string.Empty;
+            try
+            {
+                Dictionary<string, object> parametros = new Dictionary<string, object>();
+                parametros.Add("parroquia", oFicha.Parroquia);
+                parametros.Add("referencia", oFicha.CodigoCatastral);
+                parametros.Add("clave_anterior", oFicha.ClaveAnterior);
+                parametros.Add("documento_identidad", oFicha.NumeroIdentificacion);
+                parametros.Add("propietario", oFicha.NombrePropietario);
+                parametros.Add("propietario_anterior", oFicha.PropietarioAnterior);
+                parametros.Add("direccion", oFicha.Direccion);
+                parametros.Add("sector", oFicha.Sector);
+                parametros.Add("categoria", oFicha.Categoria);
+                parametros.Add("mes_consumo", oFicha.MesConsumo);
+                parametros.Add("numero_medidor", oFicha.NumeroMedidor);
+                parametros.Add("metros_cubicos_consumo", oFicha.MetrosCubicoConsumo);
+                parametros.Add("rango", oFicha.Rango);
+                parametros.Add("observaciones", oFicha.Observaciones);
+                parametros.Add("deducciones", oFicha.Deducciones);
+                parametros.Add("tarifa", oFicha.TarifaFija);
+                //parametros.Add("fecha_emision", oFicha.FechaEmision);
+                //parametros.Add("fecha_vencimiento", oFicha.FechaVencimieto);
+                string storeProcedure = string.Empty;
+                if (accion == "I")
+                {
+                    storeProcedure = "spi_registra_ficha_catastro";
+                }
+                else if (accion == "M")
+                {
+                    storeProcedure = Enumerador.SpSubServicios.spu_sub_servicio.ObtenerDescripcion();
+                }
+                else if (accion == "E")
+                {
+                    storeProcedure = Enumerador.SpSubServicios.spd_sub_servicio.ObtenerDescripcion();
+                }
+                respuesta = this.gestionConexiones.EjecutaStoreProcedure(Utilitario.SerializarIdentado(parametros), string.Empty, storeProcedure);
+            }
+            catch (Exception)
+            {
+            }
+            return respuesta;
+        }
+
+        public List<FichaCatastroModel> ListadoRegistroCatastro()
+        {
+            string subProductosEmail = string.Empty;
+            List<Dictionary<string, string>> respuesta = new List<Dictionary<string, string>>();
+            List<FichaCatastroModel> oFicha = null;
+            try
+            {
+
+                string storeProcedure = "sps_listado_fichas_catastro";
+                respuesta = gestionConexiones.EjecutaStoreProcedureConsulta(null, string.Empty, storeProcedure);
+
+                if (respuesta.Count >= 1)
+                {
+                    string respuestaStr = Utilitario.SerializarIdentado(respuesta);
+                    oFicha = Utilitario.Deserializar<List<FichaCatastroModel>>(respuestaStr);
+                }
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                //respuesta = conexionGestion.AsignarDatosRespuesta(Enumerador.EnumTipoRespuesta.ErrorException, Constantes.RESPUESTA_MENSAJE_ERROR);
+                //UtilitarioLogs.PreparaGuardaLogsBase(ex, Enumerador.EnumTipoRespuesta.ErrorException, datosMetodo);
+            }
+            return oFicha;
+        }
     }
 }

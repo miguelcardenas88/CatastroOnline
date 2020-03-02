@@ -1,0 +1,378 @@
+﻿@model Comun.Modelo.FichaCatastroModel
+@using Comun.Modelo
+
+
+@using (Html.BeginForm("RegistroCatastro", "Producto", FormMethod.Post, new { @id = "frmNuevaFicha" }))
+{
+
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Registro Catastro</h4>
+            </div>
+        </div>
+        @Html.AntiForgeryToken()
+        if (ViewBag.ErrorGenerico != null && ViewBag.ErrorGenerico != "")
+        {
+            @Html.Raw(ViewBag.ErrorGenerico);
+        }
+        else
+        {
+            <div class="gestionSubProducto" id="tab1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                @if (ViewBag.Mensaje != null)
+                                {
+                                    <div style="text-align: center; color: blue;">
+                                        <h4>
+                                            <label style="color: blue;">@ViewBag.Mensaje</label>
+                                        </h4>
+                                    </div>
+                                }
+                            <form method="post" id="wizard-stage-1">
+                                <div class="form-group">
+                                    <label>Código Catastral</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.CodigoCatastral, new { @id = "idCodigoCatastral", @class = "form-control footPlace", @placeholder = "Código catastral", @required = "required" })
+                                    </div>
+                                    <div class="next" style="text-align: center;">
+                                        <input class="btn btn-primary" type="button" value="Consultar" id="btnConsultarCodigo" />
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>Parroquia</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Parroquia, new { @class = "form-control footPlace", @placeholder = "Parroquia", @required = "required", @autocomplete = "off" })
+                                    </div>
+                                </div>
+
+                                @*<div class="form-group">
+            <label for="exampleFormControlSelect1">Tipo identificación:</label>
+            <div class="input-group input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend-3">
+                        <i class="batch-icon batch-icon-menu-alt"></i>
+                    </span>
+                </div>
+                @Html.DropDownListFor(model => model.TipoIdentificacion,
+                new List<SelectListItem> {
+                     new SelectListItem { Value = "" , Text = "-selecionar-" },
+                     new SelectListItem { Value = "1" , Text = "Cédula" },
+                     new SelectListItem { Value = "2" , Text = "Ruc" },
+                     new SelectListItem { Value = "3" , Text = "Pasaporte" },
+                     new SelectListItem { Value = "4" , Text = "Otro" }
+                  },
+                new { @class = "form-control", @required = "required" })
+            </div>
+        </div>*@
+
+                                <div class="form-group">
+                                    <label>Clave anterior</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.ClaveAnterior, new { @class = "form-control footPlace", @placeholder = "Clave Anterior", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Número identificación</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NumeroIdentificacion, new { @class = "form-control footPlace", @placeholder = "Número de identificación", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Nombre propietario</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NombrePropietario, new { @class = "form-control footPlace", @placeholder = "Nombre propietario", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Propietario anterior</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.PropietarioAnterior, new { @class = "form-control footPlace", @placeholder = "Propietario anterior", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Dirección</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control footPlace", @placeholder = "Dirección", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Sector</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Sector, new { @class = "form-control footPlace", @placeholder = "Sector", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Categoría</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Categoria, new { @class = "form-control footPlace", @placeholder = "Categoría", @type = "number", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Mes Consumo</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.MesConsumo, new { @class = "form-control footPlace", @placeholder = "Mes Consumo", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Número de medidor</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.NumeroMedidor, new { @class = "form-control footPlace", @placeholder = "Número de medidor", @required = "required", @autocomplete = "off" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Metros cúbico consumo</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.MetrosCubicoConsumo, new { @class = "form-control footPlace", @placeholder = "Metros cúbicos consumo", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Rango</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Rango, new { @class = "form-control footPlace", @placeholder = "Rango", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Observaciones</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Observaciones, new { @class = "form-control footPlace", @placeholder = "Observaciones", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Deducciones</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Deducciones, new { @class = "form-control footPlace", @placeholder = "Deducciones", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tarifa Fija</label>
+                                    <div class="input-group input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend-3">
+                                                <i class="batch-icon batch-icon-user"></i>
+                                            </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.TarifaFija, new { @class = "form-control footPlace", @placeholder = "Tarifa Fija", @required = "required", @autocomplete = "off" }) @*@required = "required" })*@
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            </div>
+                        </div>
+
+                        <div class="next">
+                            <input class="btn btn-primary" type="button" value="Registrar" id="btnGuardarSubProducto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+}
+
+<script>
+    function limpiarTextos() {
+        $('#CodigoUnico').val("");
+        $('#idCodigoCatastral').val("");
+        $('#ClaveAnterior').val("");
+        $('#NumeroIdentificacion').val("");
+        $('#NombrePropietario').val("");
+        $('#PropietarioAnterior').val("");
+        $('#Direccion').val("");
+        $('#Barrio').val("");
+        $('#NumeroPiso').val("");
+        $('#CodigoLocalizacion').val("");
+        $('#UsuarioRegistro').val("");
+    }
+
+    function ejecutePostCatastro(url, datos) {
+        esperando.iniciar();
+        const datosLlamada = datos;
+        if (typeof (datosLlamada) === 'object') {
+            datosLlamada.__RequestVerificationToken = $('input[name=__RequestVerificationToken]').val();
+        }
+        $.post(url, datosLlamada, function (response) {
+            $("#panelPrincipal").html(response);
+            limpiarTextos();
+        }).done(function () {
+            esperando.terminar();
+        }).always(function () {
+            esperando.terminar();
+        });
+    }
+    $("#btnConsultarCodigo").click(function () {
+        if ($('#idCodigoCatastral').val() !== "" && $('#idCodigoCatastral').val() !== undefined) {
+
+            var formData = {
+                CodigoCatastral: $('#idCodigoCatastral').val(),
+            };
+            ejecutePost('@Url.Action("ConsultarRegistroCatastro", "SubProducto")', formData);
+        }
+        else {
+            alert("Ingrese el código catastral");
+        }
+    });
+
+
+
+
+    $("#btnGuardarSubProducto").click(function () {
+        if ($("#frmNuevaFicha").valid()) {
+
+            var formData = {
+                Parroquia: $('#Parroquia').val(),
+CodigoCatastral: $('#idCodigoCatastral').val(),
+ClaveAnterior: $('#ClaveAnterior').val(),
+NumeroIdentificacion: $('#NumeroIdentificacion').val(),
+NombrePropietario: $('#NombrePropietario').val(),
+PropietarioAnterior: $('#PropietarioAnterior').val(),
+Direccion: $('#Direccion').val(),
+Sector: $('#Sector').val(),
+Categoria: $('#Categoria').val(),
+MesConsumo: $('#MesConsumo').val(),
+NumeroMedidor: $('#NumeroMedidor').val(),
+MetrosCubicoConsumo: $('#MetrosCubicoConsumo').val(),
+Rango: $('#Rango').val(),
+Observaciones: $('#Observaciones').val(),
+Deducciones: $('#Deducciones').val(),
+TarifaFija: $('#TarifaFija').val(),
+FechaEmision : $('#FechaEmision').val(),
+FechaVencimieto : $('#FechaVencimieto').val(),
+            };
+            ejecutePostCatastro('@Url.Action("RegistarFicha", "SubProducto")', formData);
+        }
+    });
+
+      $("#btnConsultarCodigoVer").click(function () {
+
+
+        console.log("CodigoUnico:"+$(this).attr('data-bind'),);
+            var formData = {
+                CodigoUnico: $(this).attr('data-bind'),
+        };
+        ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
+
+    });
+
+      $("#btnDescargarReporte").click(function () {
+
+       $.ajax({
+           cache: false,
+            type: 'POST',
+    url: 'SubProducto/PostReportPartial',
+    data: "",
+    success: function (data) {
+
+         window.location = 'SubProducto/Download?fileGuid=DescargarArchivo'
+            + '&filename=TestReportOutput.xlsx' ;
+
+
+    }
+})
+
+      });
+
+    
+  function fnValoresDetalle(obj) {
+              var formData = {
+                CodigoUnico: $(obj).attr('data-bind'),
+        };
+        ejecutePost('@Url.Action("ConsultarCatastro", "SubProducto")', formData);
+        };
+
+
+</script>

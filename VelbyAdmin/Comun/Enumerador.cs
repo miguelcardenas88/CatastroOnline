@@ -218,6 +218,9 @@ namespace Comun
             GestionProducto,
             GestionSubProducto,
             ListaRegistroCatastro,
+            RegistroUsuarios,
+            RegistroCatastro,
+            ListadoRegistroCatastro,
         }
 
         #region Codigos de error y mensajes de error

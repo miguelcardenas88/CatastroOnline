@@ -21,3 +21,4 @@ C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\C
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csproj.CopyComplete
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.dll
 C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.pdb
+C:\Users\cardenasma\Documents\GitHub\CatastroOnline\VelbyAdmin\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
