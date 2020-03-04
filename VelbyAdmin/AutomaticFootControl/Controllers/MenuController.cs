@@ -16,6 +16,15 @@ namespace AutomaticFootControl.Controllers
         {
             //UsuarioModelo usuario = (UsuarioModelo)Session["DatosUsuario"];
             //ViewBag.NombreUsuario = usuario.Nombres;
+            ViewBag.TipoUsuario = "admin";
+            return View();
+        }
+
+        [NoValidarSesionAplication]
+        public ActionResult InicioUsuarios()
+        {
+            //UsuarioModelo usuario = (UsuarioModelo)Session["DatosUsuario"];
+            //ViewBag.NombreUsuario = usuario.Nombres;
             return View();
         }
     }

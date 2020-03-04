@@ -1,10 +1,10 @@
-﻿@model AutomaticFootControl.Models.Usuario.UsuarioModelo
+﻿@model Comun.Modelo.UsuarioModelo
 @{
     ViewBag.Title = "Inicio Sesión";
     Layout = "~/Views/Shared/_LayoutInicioSesion.cshtml";
 }
 
-@using (Html.BeginForm("RegistrarUsuario", "InicioSesion", FormMethod.Post, new { @class = "Form", Id = "idFormulario" }))
+@using (Html.BeginForm("ValidarUsuarioContrasenia", "InicioSesion", FormMethod.Post, new { @class = "Form", Id = "idFormulario" }))
 {
     <h1 class="Form-title">
         <center>Inicio sesión</center>
@@ -26,18 +26,7 @@
                 @Html.TextBoxFor(model => model.Contrasenia, new { @type = "password", @class = "form-control", @name = "Contraseña", @placeholder = "Contraseña", @maxlength = 15, @autofocus = true, @autocomplete = "off", @required = "required" })
             </div>
         </div>
-
-        <div class="form-group has-feedback has-clear">
-            <label class="sr-only">Usuario</label>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                @Html.TextBoxFor(model => model.Nombres, new {  @class = "form-control", @name = "niombre", @placeholder = "nombre", @maxlength = 15, @autofocus = true, @autocomplete = "off", @required = "required" })
-            </div>
-        </div>
-
         <div>
-
-
             <button id="btnIngresar" class="btn btn-lg btn-dark btn-block" type="submit">Ingresar</button>
         </div>
         @if (Model != null && Model.Pantalla != null && !string.IsNullOrEmpty(Model.Pantalla.MensajeInformativo))

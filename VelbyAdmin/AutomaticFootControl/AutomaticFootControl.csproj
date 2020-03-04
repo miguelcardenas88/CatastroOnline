@@ -817,6 +817,7 @@
     <Content Include="Views\InicioSesion\RegistroUsuarios.cshtml" />
     <Content Include="Views\SubProducto\RegistroCatastro.cshtml" />
     <Content Include="Views\SubProducto\ListadoRegistroCatastro.cshtml" />
+    <Content Include="Views\Menu\InicioUsuarios.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

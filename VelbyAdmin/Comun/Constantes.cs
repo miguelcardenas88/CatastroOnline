@@ -185,7 +185,7 @@ namespace Comun
         public const string MAIL_ENVIO = "miguel.cardenas.ch@hotmail.com";
         public const string ASUNTO = "CambiarAarchivo";
         public const string CONTRASENIA_MAIL = "Something20*";
-        public const string NOMBRE_PANTALLA = "VEIBY";
+        public const string NOMBRE_PANTALLA = "SINAT";
         public const int PUERTO_EMAIL = 587;
 
         public const string CUERPO_MENSAJE_RESERVA_ESPERA = "/ReservaPendiente.html";

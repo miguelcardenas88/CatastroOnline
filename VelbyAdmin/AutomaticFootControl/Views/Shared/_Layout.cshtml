@@ -32,12 +32,16 @@
                         <li>
                             <h6 class="nav-header">Agua Potable</h6>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:var formData = {consultaDesdeListado:'L',}; ejecutePost('@Url.Action("RegistroCatastro", "SubProducto")', 'formData');">
-                                <i class="fa fa-list-alt"></i>
-                                Registro Catastral<span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+                        @if (ViewBag.TipoUsuario != "admin")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:var formData = {consultaDesdeListado:'L',}; ejecutePost('@Url.Action("RegistroCatastro", "SubProducto")', 'formData');">
+                                    <i class="fa fa-list-alt"></i>
+                                    Registro Catastral<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        }
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListadoRegistroCatastro", "SubProducto")', 'SubProducto');">
@@ -45,32 +49,34 @@
                                 Listado Registros<span class="sr-only">(current)</span>
                             </a>
                         </li>
+                        @if (ViewBag.TipoUsuario == "admin")
+                        {
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("RegistroUsuarios", "InicioSesion")', 'SubProducto');">
-                                <i class="fa fa-list-alt"></i>
-                                Creación de Usuarios<span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:ejecutePost('@Url.Action("RegistroUsuarios", "InicioSesion")', 'SubProducto');">
+                                    <i class="fa fa-list-alt"></i>
+                                    Creación de Usuarios<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        }
+                            @*<li class="nav-item">
+                <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarSubProducto", "SubProducto")', '');">
+                    <i class="fa fa-list-alt fa-1x"></i>
+                    Sub Producto
+                </a>
+            </li>*@
 
-                        @*<li class="nav-item">
-            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarSubProducto", "SubProducto")', '');">
-                <i class="fa fa-list-alt fa-1x"></i>
-                Sub Producto
-            </a>
-        </li>*@
+                            @*<li>
+                <h6 class="nav-header">Colaboradores</h6>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarColaborador", "Colaborador")', '');">
+                    <i class="fa fa-list-alt"></i>
+                    Gestión Colaborador <span class="sr-only">(current)</span>
+                </a>
+            </li>*@
 
-                        @*<li>
-            <h6 class="nav-header">Colaboradores</h6>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:ejecutePost('@Url.Action("ListarColaborador", "Colaborador")', '');">
-                <i class="fa fa-list-alt"></i>
-                Gestión Colaborador <span class="sr-only">(current)</span>
-            </a>
-        </li>*@
-
-                    </ul>
+                        </ul>
 
                     @*<ul class="nav nav-pills flex-column">
                             <li>

@@ -12,7 +12,7 @@ namespace AutomaticFootControl
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Menu", action = "Inicio", id = UrlParameter.Optional }
+                defaults: new { controller = "InicioSesion", action = "InicioSesion", id = UrlParameter.Optional }
             );
         }
     }

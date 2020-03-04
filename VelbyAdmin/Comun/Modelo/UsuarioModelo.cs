@@ -9,7 +9,7 @@ namespace Comun.Modelo
         public UsuarioModelo()
         {
         }
-
+        public PantallaModelo Pantalla { get; set; }
         public int IdCliente { get; set; }
 
         public int IdColaborador { get; set; }

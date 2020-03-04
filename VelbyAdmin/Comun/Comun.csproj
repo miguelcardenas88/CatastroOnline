@@ -52,8 +52,10 @@
     <Compile Include="Constantes.cs" />
     <Compile Include="Enumerador.cs" />
     <Compile Include="Modelo\Class1.cs" />
+    <Compile Include="Modelo\EmailNotificacionModelo.cs" />
     <Compile Include="Modelo\FichaCatastroModel.cs" />
     <Compile Include="Modelo\modFicha.cs" />
+    <Compile Include="Modelo\PantallaModelo.cs" />
     <Compile Include="Modelo\RespuestaComun.cs" />
     <Compile Include="Modelo\UsuarioModelo.cs" />
     <Compile Include="Modelo\vmoFichaCatastro.cs" />
